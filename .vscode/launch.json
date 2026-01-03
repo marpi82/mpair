@@ -1,0 +1,77 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ESP32-S3 (OpenOCD)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/software/firmware-s3/build/mpair-s3.elf",
+            "cwd": "${workspaceFolder}/software/firmware-s3",
+            "MIMode": "gdb",
+            "miDebuggerPath": "${env:HOME}/esp/esp-idf/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gdb",
+            "miDebuggerServerAddress": "localhost:3333",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "target remote localhost:3333"
+                },
+                {
+                    "text": "set remote hardware-watchpoint-limit 2"
+                },
+                {
+                    "text": "mon reset halt"
+                },
+                {
+                    "text": "maintenance flush register-cache"
+                },
+                {
+                    "text": "thb app_main"
+                }
+            ],
+            "externalConsole": false,
+            "logging": {
+                "engineLogging": false
+            }
+        },
+        {
+            "name": "Debug ESP32-H2 (OpenOCD)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/software/firmware-h2/build/mpair-h2.elf",
+            "cwd": "${workspaceFolder}/software/firmware-h2",
+            "MIMode": "gdb",
+            "miDebuggerPath": "${env:HOME}/esp/esp-idf/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gdb",
+            "miDebuggerServerAddress": "localhost:3333",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "target remote localhost:3333"
+                },
+                {
+                    "text": "set remote hardware-watchpoint-limit 2"
+                },
+                {
+                    "text": "mon reset halt"
+                },
+                {
+                    "text": "maintenance flush register-cache"
+                },
+                {
+                    "text": "thb app_main"
+                }
+            ],
+            "externalConsole": false,
+            "logging": {
+                "engineLogging": false
+            }
+        }
+    ]
+}

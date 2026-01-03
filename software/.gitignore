@@ -1,0 +1,48 @@
+# ESP-IDF build artifacts
+build/
+sdkconfig
+sdkconfig.old
+*.o
+*.a
+*.so
+*.elf
+*.bin
+*.map
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# Dependencies
+managed_components/
+dependencies.lock
+
+# IDE
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+*.log
+test_report/
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.pfx
+
+# Local configuration
+local_config.h
+secrets.h

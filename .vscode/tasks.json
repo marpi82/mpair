@@ -1,0 +1,160 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build ESP32-S3 Firmware",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py build",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-s3"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Build ESP32-H2 Firmware",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py build",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-h2"
+            },
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Flash ESP32-S3",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py -p /dev/ttyACM0 flash",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-s3"
+            },
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Flash ESP32-H2",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py -p /dev/ttyACM1 flash",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-h2"
+            },
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Monitor ESP32-S3",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py -p /dev/ttyACM0 monitor",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-s3"
+            },
+            "group": "none",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Monitor ESP32-H2",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py -p /dev/ttyACM1 monitor",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-h2"
+            },
+            "group": "none",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Build + Flash + Monitor S3",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Build ESP32-S3 Firmware",
+                "Flash ESP32-S3",
+                "Monitor ESP32-S3"
+            ],
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build + Flash + Monitor H2",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Build ESP32-H2 Firmware",
+                "Flash ESP32-H2",
+                "Monitor ESP32-H2"
+            ],
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean ESP32-S3",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py fullclean",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-s3"
+            },
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean ESP32-H2",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py fullclean",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-h2"
+            },
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Configure ESP32-S3 (menuconfig)",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py menuconfig",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-s3"
+            },
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Configure ESP32-H2 (menuconfig)",
+            "type": "shell",
+            "command": ". ${env:HOME}/esp/esp-idf/export.sh && idf.py menuconfig",
+            "options": {
+                "cwd": "${workspaceFolder}/software/firmware-h2"
+            },
+            "group": "none",
+            "problemMatcher": []
+        }
+    ]
+}

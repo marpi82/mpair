@@ -17,7 +17,7 @@ software/
 
 ### Prerequisites
 
-1. **ESP-IDF v5.1+**
+1. **ESP-IDF v5.5.2**
    - Follow installation guide in `docs/ESP-IDF-SETUP.md`
    - Support for both ESP32-S3 and ESP32-H2 required
 

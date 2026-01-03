@@ -14,7 +14,7 @@ Matter/Thread gateway firmware for the mpair air quality monitoring station.
 
 ### ESP-IDF Installation
 
-This project requires ESP-IDF v5.1 or later with ESP32-H2 support.
+This project requires ESP-IDF v5.5.2 or later with ESP32-H2 support.
 
 ```bash
 # Install ESP-IDF (see firmware-s3 README for details)

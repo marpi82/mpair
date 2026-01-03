@@ -31,7 +31,7 @@ Main controller firmware for the mpair air quality monitoring station.
 
 ### ESP-IDF Installation
 
-This project requires ESP-IDF v5.1 or later.
+This project requires ESP-IDF v5.5.2 or later.
 
 ```bash
 # Install prerequisites (Ubuntu/Debian)

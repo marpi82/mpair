@@ -28,10 +28,10 @@ sudo apt-get install -y \
 ```bash
 mkdir -p ~/esp
 cd ~/esp
-git clone -b v5.3 --recursive https://github.com/espressif/esp-idf.git
+git clone -b v5.5.2 --recursive https://github.com/espressif/esp-idf.git
 ```
 
-**Note**: We use ESP-IDF v5.3 for best support of ESP32-S3 and ESP32-H2.
+**Note**: We use ESP-IDF v5.5.2 for best support of ESP32-S3 and ESP32-H2.
 
 #### 3. Install ESP-IDF Tools
 
@@ -91,13 +91,13 @@ Download from: https://dl.espressif.com/dl/esp-idf/
 Run `esp-idf-tools-setup-x.x.x.exe` and follow the installer.
 
 Select:
-- ESP-IDF v5.3
+- ESP-IDF v5.5.2
 - ESP32-S3 and ESP32-H2 targets
 - All tools
 
 #### 2. Use ESP-IDF Command Prompt
 
-Use the "ESP-IDF 5.3 CMD" or "ESP-IDF 5.3 PowerShell" from Start menu.
+Use the "ESP-IDF 5.5 CMD" or "ESP-IDF 5.5 PowerShell" from Start menu.
 
 ## Verification
 
@@ -112,7 +112,7 @@ get_idf   # Linux/macOS
 idf.py --version
 
 # Expected output:
-# ESP-IDF v5.3.x
+# ESP-IDF v5.5.2
 ```
 
 ## USB Permissions (Linux)

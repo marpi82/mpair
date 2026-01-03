@@ -11,7 +11,7 @@
     ],
     "C_Cpp.default.defines": [
         "ESP_PLATFORM",
-        "IDF_VER=\"v5.3\""
+        "IDF_VER=\"v5.5.2\""
     ],
     "files.associations": {
         "*.h": "c",
@@ -39,7 +39,7 @@
     ],
     "idf.port": "/dev/ttyACM0",
     "idf.baudRate": "115200",
-    "python.defaultInterpreterPath": "${env:HOME}/esp/esp-idf/python_env/idf5.3_py3.10_env/bin/python",
+    "python.defaultInterpreterPath": "${env:HOME}/esp/esp-idf/python_env/idf5.5_py3.10_env/bin/python",
     "editor.formatOnSave": true,
     "editor.rulers": [
         100,

@@ -111,9 +111,9 @@ Atrybucja
 Podczas używania lub dystrybuowania tego oprogramowania, proszę o podanie atrybucji:
 
     **mpair** - Zaawansowana Stacja Monitoringu Jakości Powietrza
-    
+
     Licencjonowane na zasadach GNU GPL-3.0
-    
+
     https://github.com/[twoja-nazwa-użytkownika]/mpair
 
 Jak zachować zgodność

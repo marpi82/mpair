@@ -111,9 +111,9 @@ Attribution
 When using or distributing this software, please provide attribution:
 
     **mpair** - Advanced Air Quality Monitoring Station
-    
+
     Licensed under GNU GPL-3.0
-    
+
     https://github.com/[your-username]/mpair
 
 How to Comply

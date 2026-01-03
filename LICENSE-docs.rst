@@ -66,11 +66,11 @@ Attribution
 When using or adapting this documentation, please provide attribution:
 
     **mpair Documentation**
-    
+
     By mpair contributors
-    
+
     Licensed under CC BY-SA 4.0
-    
+
     https://github.com/[your-username]/mpair
 
 Or in short form:
@@ -92,7 +92,7 @@ When you share or adapt the documentation, you must:
 
 Example attribution:
 
-    This guide is based on the `mpair documentation <https://github.com/user/mpair>`_ 
+    This guide is based on the `mpair documentation <https://github.com/user/mpair>`_
     by mpair contributors, licensed under `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_.
     Modified to include additional sensor calibration steps.
 

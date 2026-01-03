@@ -11,6 +11,7 @@ This directory contains scripts for setting up and testing development tools.
 ```
 
 This will install:
+
 - **System packages**: clang-format, cmake, ninja, git
 - **Node.js & npm**: For markdownlint
 - **Python virtual environment** (`.venv-tools/`): For Python-based tools
@@ -40,7 +41,7 @@ alias activate-mpair='cd ~/path/to/mpair && source .venv-tools/bin/activate'
 ### System Tools
 
 | Tool | Purpose | Command |
-|------|---------|---------|
+| ------------ | --------------------- | --------------------- |
 | clang-format | C/C++ code formatting | `clang-format -i file.c` |
 | cmake | Build system | `cmake --version` |
 | ninja | Fast build tool | `ninja --version` |
@@ -48,7 +49,7 @@ alias activate-mpair='cd ~/path/to/mpair && source .venv-tools/bin/activate'
 ### Python Tools (in virtual environment)
 
 | Tool | Purpose | Command |
-|------|---------|---------|
+| -------------- | ---------------- | ---------------------------- |
 | pre-commit | Git hook manager | `pre-commit run --all-files` |
 | black | Python formatter | `black scripts/` |
 | flake8 | Python linter | `flake8 scripts/` |
@@ -59,7 +60,7 @@ alias activate-mpair='cd ~/path/to/mpair && source .venv-tools/bin/activate'
 ### Node.js Tools (global)
 
 | Tool | Purpose | Command |
-|------|---------|---------|
+| ------------ | --------------- | ------------------- |
 | markdownlint | Markdown linter | `markdownlint *.md` |
 
 ## Manual Tool Usage
@@ -166,7 +167,7 @@ pre-commit uninstall
 
 ## Directory Structure
 
-```
+```text
 scripts/
 ├── setup-tools.sh              # Install all development tools
 ├── test-tools.sh               # Test all tools
@@ -239,16 +240,19 @@ Local results should match CI results, so test locally before pushing!
 All dependencies are installed by `setup-tools.sh`. Manual installation:
 
 **System (Ubuntu/Debian):**
+
 ```bash
 sudo apt-get install python3 python3-pip python3-venv clang-format-14 nodejs npm
 ```
 
 **Python (in virtual environment):**
+
 ```bash
 pip install pre-commit black flake8 rstcheck codespell detect-secrets
 ```
 
 **Node.js (global):**
+
 ```bash
 npm install -g markdownlint-cli
 ```

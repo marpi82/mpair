@@ -66,7 +66,7 @@ idf.py -p /dev/ttyACM1 flash monitor
 
 ## Project Structure
 
-```
+```text
 firmware-h2/
 ├── CMakeLists.txt          # Main CMake configuration
 ├── sdkconfig.defaults      # Default configuration
@@ -83,7 +83,7 @@ firmware-h2/
 
 The two MCUs communicate via UART using a simple protocol:
 
-```
+```text
 [START_BYTE][CMD][LEN][DATA...][CHECKSUM]
 
 Commands:
@@ -100,7 +100,7 @@ This device implements the **Air Quality Sensor** cluster with:
 - PM1.0, PM2.5, PM4.0, PM10 measurements
 - CO₂ concentration
 - Temperature
-- Humidity  
+- Humidity
 - Atmospheric pressure
 
 ## Commissioning
@@ -114,9 +114,9 @@ The device can be commissioned via:
 ## GPIO Configuration
 
 | Peripheral | GPIO | Function |
-|------------|------|----------|
-| UART TX    | TBD  | To ESP32-S3 RX |
-| UART RX    | TBD  | From ESP32-S3 TX |
+| ------------- | -------- | ------------------- |
+| UART TX | TBD | To ESP32-S3 RX |
+| UART RX | TBD | From ESP32-S3 TX |
 | Thread Radio | Internal | IEEE 802.15.4 |
 
 ## License

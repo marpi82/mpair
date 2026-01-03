@@ -9,6 +9,7 @@ This document describes the Continuous Integration and Continuous Deployment (CI
 Runs on every push and pull request to `main` and `develop` branches.
 
 **Jobs:**
+
 - `build-s3` - Builds ESP32-S3 firmware
 - `build-h2` - Builds ESP32-H2 firmware
 - `build-summary` - Reports overall build status
@@ -22,6 +23,7 @@ Runs on every push and pull request to `main` and `develop` branches.
 Runs on every push and pull request.
 
 **Checks:**
+
 - **clang-format** - C/C++ code formatting
 - **markdown-lint** - Markdown file linting
 - **license-check** - GPL-3.0 license header verification
@@ -33,6 +35,7 @@ Runs on every push and pull request.
 Triggers on version tags (`v*.*.*`) or manual workflow dispatch.
 
 **Process:**
+
 1. Build both firmwares
 2. Generate release artifacts:
    - Firmware binaries
@@ -57,6 +60,7 @@ git push origin v0.1.0
 Runs on push to `main` when documentation changes.
 
 **Actions:**
+
 - Generate Doxygen API documentation
 - Validate README structure
 - Deploy to GitHub Pages (`/api` path)
@@ -71,6 +75,7 @@ pre-commit install
 ```
 
 **Hooks:**
+
 - File checks (trailing whitespace, EOF, merge conflicts)
 - C/C++ formatting (clang-format)
 - Python formatting (black) and linting (flake8)
@@ -82,11 +87,13 @@ pre-commit install
 - Prevent direct commits to main
 
 **Manual run:**
+
 ```bash
 pre-commit run --all-files
 ```
 
 **Update hooks:**
+
 ```bash
 pre-commit autoupdate
 ```
@@ -94,7 +101,7 @@ pre-commit autoupdate
 ## Configuration Files
 
 | File | Purpose |
-|------|---------|
+| ----------------------------------- | ------------------------------------ |
 | `.clang-format` | C/C++ code style (ESP-IDF style) |
 | `.markdownlint.json` | Markdown linting rules |
 | `.cspell.json` | Spell checker dictionary |
@@ -153,6 +160,7 @@ No secrets required for current workflows. Future additions may need:
 ### Build fails with "submodule not found"
 
 Make sure to checkout with submodules:
+
 ```yaml
 uses: actions/checkout@v4
 with:

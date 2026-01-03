@@ -41,6 +41,7 @@ cd ~/esp/esp-idf
 ```
 
 This will download and install:
+
 - Xtensa toolchain (for ESP32-S3)
 - RISC-V toolchain (for ESP32-H2)
 - OpenOCD (for debugging)
@@ -86,11 +87,12 @@ brew install cmake ninja dfu-util python3
 
 #### 1. Download ESP-IDF Installer
 
-Download from: https://dl.espressif.com/dl/esp-idf/
+Download from: <https://dl.espressif.com/dl/esp-idf/>
 
 Run `esp-idf-tools-setup-x.x.x.exe` and follow the installer.
 
 Select:
+
 - ESP-IDF v5.5.2
 - ESP32-S3 and ESP32-H2 targets
 - All tools
@@ -154,6 +156,7 @@ dmesg -w
 ```
 
 Typically:
+
 - ESP32-S3: `/dev/ttyACM0`
 - ESP32-H2: `/dev/ttyACM1`
 
@@ -164,6 +167,7 @@ ls -l /dev/cu.*
 ```
 
 Typically:
+
 - ESP32-S3: `/dev/cu.usbmodem*`
 - ESP32-H2: `/dev/cu.usbmodem*`
 
@@ -278,14 +282,14 @@ get_idf
 
 ## Additional Resources
 
-- **ESP-IDF Documentation**: https://docs.espressif.com/projects/esp-idf/
-- **ESP-IDF GitHub**: https://github.com/espressif/esp-idf
-- **ESP32-S3 Datasheet**: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
-- **ESP32-H2 Datasheet**: https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf
-- **Forum**: https://esp32.com/
-- **Discord**: https://discord.gg/esp32
+- **ESP-IDF Documentation**: <https://docs.espressif.com/projects/esp-idf/>
+- **ESP-IDF GitHub**: <https://github.com/espressif/esp-idf>
+- **ESP32-S3 Datasheet**: <https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf>
+- **ESP32-H2 Datasheet**: <https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf>
+- **Forum**: <https://esp32.com/>
+- **Discord**: <https://discord.gg/esp32>
 
 ## Support
 
 For mpair-specific issues, open an issue on GitHub:
-https://github.com/[your-username]/mpair/issues
+<https://github.com/[your-username]/mpair/issues>

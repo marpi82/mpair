@@ -79,9 +79,9 @@ Atrybucja
 Podczas używania lub dystrybuowania tego projektu hardware, proszę o podanie atrybucji:
 
     **mpair** - Zaawansowana Stacja Monitoringu Jakości Powietrza
-    
+
     Licencjonowane na zasadach CERN-OHL-S-2.0
-    
+
     https://github.com/[twoja-nazwa-użytkownika]/mpair
 
 Jak zachować zgodność

@@ -46,24 +46,19 @@ if [ "$OS" == "linux" ]; then
         python3 \
         python3-pip \
         python3-venv \
-        clang-format-14 \
+        clang-format \
         git \
         curl \
         build-essential \
         cmake \
         ninja-build
-    
-    # Create symlink for clang-format
-    if [ ! -f /usr/bin/clang-format ]; then
-        sudo ln -s /usr/bin/clang-format-14 /usr/bin/clang-format
-    fi
-    
+
 elif [ "$OS" == "macos" ]; then
     if ! command -v brew &> /dev/null; then
         echo -e "${YELLOW}⚠️  Homebrew not found. Installing...${NC}"
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
-    
+
     brew install \
         python3 \
         clang-format \

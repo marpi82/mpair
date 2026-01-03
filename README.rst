@@ -26,19 +26,19 @@ Hardware Features
 -----------------
 
 * **Dual MCU Architecture**
-  
+
   * ESP32-S3-WROOM-1-N16R8 (main controller)
   * ESP32-H2-MINI-1-N4 (Matter/Thread connectivity)
 
 * **Connectivity**
-  
+
   * Matter over Thread support
   * Fast Ethernet 100Mbps (LAN8710A)
   * PoE/PoE+ (802.3af/at) with RT5300B-12V or 12V DC jack
   * USB-C for programming and debugging
 
 * **Sensors**
-  
+
   * SPS30 - Particulate Matter sensor (PM1.0, PM2.5, PM4.0, PM10)
   * MH-Z14A - NDIR CO₂ sensor
   * SHT31 - Temperature and humidity (indoor)
@@ -46,7 +46,7 @@ Hardware Features
   * GPS NEO-6 - Location and time synchronization
 
 * **Additional Features**
-  
+
   * PTC heater (70°C) for HECA - heats air to reduce relative humidity and prevent SPS30 from measuring water droplets
   * WS2812 RGB LED indicators
   * SSD1309 2.42" OLED display (128×64, optional for indoor version)
@@ -60,7 +60,7 @@ Software Features
 * OTA firmware updates
 * Web-based configuration interface
 * Multiple data export protocols:
-  
+
   * MQTT broker support
   * Prometheus metrics endpoint
   * JSON REST API endpoint

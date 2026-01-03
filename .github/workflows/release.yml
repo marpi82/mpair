@@ -17,14 +17,14 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: espressif/idf:v5.5.2
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-      
+
       - name: Get version
         id: version
         run: |
@@ -33,40 +33,40 @@ jobs:
           else
             echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
           fi
-      
+
       - name: Build ESP32-S3 firmware
         working-directory: software/firmware-s3
         run: |
           . ${IDF_PATH}/export.sh
           idf.py build
-      
+
       - name: Build ESP32-H2 firmware
         working-directory: software/firmware-h2
         run: |
           . ${IDF_PATH}/export.sh
           idf.py build
-      
+
       - name: Prepare release artifacts
         run: |
           mkdir -p release
-          
+
           # ESP32-S3 files
           cp software/firmware-s3/build/mpair-s3.bin release/mpair-s3-v${{ steps.version.outputs.VERSION }}.bin
           cp software/firmware-s3/build/bootloader/bootloader.bin release/mpair-s3-bootloader.bin
           cp software/firmware-s3/build/partition_table/partition-table.bin release/mpair-s3-partition-table.bin
-          
+
           # ESP32-H2 files
           cp software/firmware-h2/build/mpair-h2.bin release/mpair-h2-v${{ steps.version.outputs.VERSION }}.bin
           cp software/firmware-h2/build/bootloader/bootloader.bin release/mpair-h2-bootloader.bin
           cp software/firmware-h2/build/partition_table/partition-table.bin release/mpair-h2-partition-table.bin
-          
+
           # Create flash script
           cat > release/flash.sh <<'EOF'
           #!/bin/bash
           # Flash script for mpair v${{ steps.version.outputs.VERSION }}
-          
+
           echo "Flashing mpair firmware..."
-          
+
           # Flash ESP32-S3
           echo "Flashing ESP32-S3..."
           esptool.py --chip esp32s3 -p ${S3_PORT:-/dev/ttyACM0} -b 460800 \
@@ -75,7 +75,7 @@ jobs:
             0x0 mpair-s3-bootloader.bin \
             0x8000 mpair-s3-partition-table.bin \
             0x10000 mpair-s3-v${{ steps.version.outputs.VERSION }}.bin
-          
+
           # Flash ESP32-H2
           echo "Flashing ESP32-H2..."
           esptool.py --chip esp32h2 -p ${H2_PORT:-/dev/ttyACM1} -b 460800 \
@@ -84,15 +84,15 @@ jobs:
             0x0 mpair-h2-bootloader.bin \
             0x8000 mpair-h2-partition-table.bin \
             0x10000 mpair-h2-v${{ steps.version.outputs.VERSION }}.bin
-          
+
           echo "✅ Flashing complete!"
           EOF
           chmod +x release/flash.sh
-          
+
           # Create checksums
           cd release
           sha256sum *.bin > SHA256SUMS
-      
+
       - name: Generate changelog
         id: changelog
         run: |
@@ -110,7 +110,7 @@ jobs:
           else
             echo "CHANGELOG=Manual release v${{ steps.version.outputs.VERSION }}" >> $GITHUB_OUTPUT
           fi
-      
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
@@ -118,26 +118,26 @@ jobs:
           tag_name: v${{ steps.version.outputs.VERSION }}
           body: |
             # mpair v${{ steps.version.outputs.VERSION }}
-            
+
             ## Changes
             ${{ steps.changelog.outputs.CHANGELOG }}
-            
+
             ## Installation
-            
+
             ### Option 1: Use flash script (Linux/macOS)
             ```bash
             # Download all files
             # Set USB ports (optional, defaults to /dev/ttyACM0 and /dev/ttyACM1)
             export S3_PORT=/dev/ttyACM0
             export H2_PORT=/dev/ttyACM1
-            
+
             # Run flash script
             ./flash.sh
             ```
-            
+
             ### Option 2: Manual flash
             See [Flashing Guide](https://github.com/${{ github.repository }}/blob/main/docs/FLASHING.md)
-            
+
             ## Checksums
             See `SHA256SUMS` file for verification.
           files: |

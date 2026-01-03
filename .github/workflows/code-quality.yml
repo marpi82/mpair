@@ -10,16 +10,16 @@ jobs:
   clang-format:
     name: Check C/C++ Formatting
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Install clang-format
         run: |
           sudo apt-get update
           sudo apt-get install -y clang-format-14
-      
+
       - name: Check formatting
         run: |
           find software -name '*.c' -o -name '*.h' -o -name '*.cpp' | \
@@ -28,11 +28,11 @@ jobs:
   markdown-lint:
     name: Lint Markdown
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Lint markdown files
         uses: articulate/actions-markdownlint@v1
         with:
@@ -45,11 +45,11 @@ jobs:
   license-check:
     name: Check License Headers
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Check license headers in C/H files
         run: |
           EXIT_CODE=0
@@ -67,19 +67,19 @@ jobs:
   rst-lint:
     name: Lint reStructuredText
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install rstcheck
         run: pip install rstcheck
-      
+
       - name: Lint RST files
         run: |
           find . -name '*.rst' | xargs rstcheck --report-level warning
@@ -87,11 +87,11 @@ jobs:
   spell-check:
     name: Spell Check
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Run spell checker
         uses: streetsidesoftware/cspell-action@v6
         with:

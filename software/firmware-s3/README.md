@@ -69,7 +69,7 @@ idf.py -p /dev/ttyACM0 flash monitor
 
 ## Project Structure
 
-```
+```text
 firmware-s3/
 ├── CMakeLists.txt          # Main CMake configuration
 ├── sdkconfig.defaults      # Default configuration
@@ -87,16 +87,16 @@ firmware-s3/
 ## GPIO Configuration
 
 | Peripheral | GPIO | Function |
-|------------|------|----------|
-| USB D+     | 20   | USB OTG (console) |
-| USB D-     | 19   | USB OTG (console) |
+| ------------- | ---- | -------------------------- |
+| USB D+ | 20 | USB OTG (console) |
+| USB D- | 19 | USB OTG (console) |
 | Ethernet RMII | 0-9 | LAN8710A interface |
-| UART1 (H2) | TBD  | ESP32-H2 communication |
+| UART1 (H2) | TBD | ESP32-H2 communication |
 | UART2 (SPS30) | TBD | SPS30 sensor |
-| I2C SDA    | TBD  | SHT31, BME280, OLED |
-| I2C SCL    | TBD  | SHT31, BME280, OLED |
-| WS2812     | TBD  | RGB LEDs |
-| Heater PWM | TBD  | HECA control |
+| I2C SDA | TBD | SHT31, BME280, OLED |
+| I2C SCL | TBD | SHT31, BME280, OLED |
+| WS2812 | TBD | RGB LEDs |
+| Heater PWM | TBD | HECA control |
 
 ## License
 

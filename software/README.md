@@ -4,7 +4,7 @@ Embedded software for the mpair air quality monitoring station.
 
 ## Project Structure
 
-```
+```text
 software/
 ├── firmware-s3/         # ESP32-S3 main controller firmware
 ├── firmware-h2/         # ESP32-H2 Matter/Thread gateway firmware
@@ -133,6 +133,7 @@ See `.vscode/` directory for configuration.
 ### Communication
 
 The two MCUs communicate via UART using a simple packet protocol:
+
 - Sensor data: S3 → H2 → Matter network
 - Commands: Matter network → H2 → S3
 

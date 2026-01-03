@@ -26,19 +26,19 @@ Funkcje Sprzętowe
 -----------------
 
 * **Architektura Dual MCU**
-  
+
   * ESP32-S3-WROOM-1-N16R8 (główny kontroler)
   * ESP32-H2-MINI-1-N4 (łączność Matter/Thread)
 
 * **Łączność**
-  
+
   * Obsługa Matter over Thread
   * Fast Ethernet 100Mbps (LAN8710A)
   * PoE/PoE+ (802.3af/at) z RT5300B-12V lub wtyk DC 12V
   * USB-C do programowania i debugowania
 
 * **Czujniki**
-  
+
   * SPS30 - Czujnik pyłów zawieszonych (PM1.0, PM2.5, PM4.0, PM10)
   * MH-Z14A - Czujnik CO₂ NDIR
   * SHT31 - Temperatura i wilgotność (wewnętrzny)
@@ -46,7 +46,7 @@ Funkcje Sprzętowe
   * GPS NEO-6 - Lokalizacja i synchronizacja czasu
 
 * **Dodatkowe Funkcje**
-  
+
   * Grzałka PTC (70°C) dla systemu HECA - podgrzewa powietrze, aby zmniejszyć wilgotność względną i zapobiec pomiarowi kropel wody przez czujnik SPS30
   * Wskaźniki LED RGB WS2812
   * Wyświetlacz OLED SSD1309 2.42" (128×64, opcjonalnie dla wersji wewnętrznej)
@@ -60,7 +60,7 @@ Funkcje Oprogramowania
 * Aktualizacje firmware OTA
 * Interfejs konfiguracyjny webowy
 * Wiele protokołów eksportu danych:
-  
+
   * Wsparcie brokera MQTT
   * Endpoint metryk Prometheus
   * Endpoint JSON REST API

@@ -4,7 +4,7 @@
 repos:
   # General file checks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
         exclude: '\.patch$'
@@ -21,24 +21,24 @@ repos:
 
   # C/C++ formatting
   - repo: https://github.com/pre-commit/mirrors-clang-format
-    rev: v18.1.0
+    rev: v21.1.8
     hooks:
       - id: clang-format
-        types_or: [c, c++, c++-header]
+        types_or: [c, c++]
         args: ['-i']
         exclude: 'build/|managed_components/'
 
   # Python formatting
   - repo: https://github.com/psf/black
-    rev: 24.1.1
+    rev: 25.12.0
     hooks:
       - id: black
-        language_version: python3.11
+        language_version: python3
         exclude: 'build/|\.venv/'
 
   # Python linting
   - repo: https://github.com/pycqa/flake8
-    rev: 7.0.0
+    rev: 7.3.0
     hooks:
       - id: flake8
         args: ['--max-line-length=100', '--ignore=E203,W503']
@@ -46,7 +46,7 @@ repos:
 
   # Markdown linting
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.39.0
+    rev: v0.47.0
     hooks:
       - id: markdownlint
         args: ['--fix']
@@ -54,17 +54,17 @@ repos:
 
   # Spell checking
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.4.1
     hooks:
       - id: codespell
         args: [
           '--skip=*.bin,*.elf,*.map,build,*.git',
-          '--ignore-words-list=ser,ot,thead'
+          '--ignore-words-list=ser,ot,thead,tekst,metod'
         ]
 
   # Check for secrets
   - repo: https://github.com/Yelp/detect-secrets
-    rev: v1.4.0
+    rev: v1.5.0
     hooks:
       - id: detect-secrets
         args: ['--baseline', '.secrets.baseline']
@@ -72,7 +72,7 @@ repos:
 
   # reStructuredText linting
   - repo: https://github.com/rstcheck/rstcheck
-    rev: v6.2.0
+    rev: v6.2.5
     hooks:
       - id: rstcheck
         additional_dependencies: [sphinx]
@@ -85,7 +85,7 @@ repos:
         name: Check GPL-3.0 license headers
         entry: python3 scripts/check_license_headers.py
         language: python
-        types_or: [c, c++, c++-header]
+        types_or: [c, c++]
         exclude: 'build/|managed_components/'
 
       - id: no-commit-to-main

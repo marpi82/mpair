@@ -66,11 +66,11 @@ Atrybucja
 Podczas używania lub adaptowania tej dokumentacji, proszę o podanie atrybucji:
 
     **Dokumentacja mpair**
-    
+
     Autorstwa kontrybutorów mpair
-    
+
     Licencjonowane na zasadach CC BY-SA 4.0
-    
+
     https://github.com/[twoja-nazwa-użytkownika]/mpair
 
 Lub w krótkiej formie:
@@ -92,7 +92,7 @@ Gdy udostępniasz lub adaptujesz dokumentację, musisz:
 
 Przykład atrybucji:
 
-    Ten przewodnik jest oparty na `dokumentacji mpair <https://github.com/user/mpair>`_ 
+    Ten przewodnik jest oparty na `dokumentacji mpair <https://github.com/user/mpair>`_
     autorstwa kontrybutorów mpair, licencjonowanej na zasadach `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/deed.pl>`_.
     Zmodyfikowano o dodatkowe kroki kalibracji czujników.
 

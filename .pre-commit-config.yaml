@@ -1,0 +1,96 @@
+# Pre-commit hooks for mpair project
+# Install: pip install pre-commit && pre-commit install
+
+repos:
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: '\.patch$'
+      - id: end-of-file-fixer
+        exclude: '\.bin$|\.elf$'
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+      - id: check-executables-have-shebangs
+
+  # C/C++ formatting
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v18.1.0
+    hooks:
+      - id: clang-format
+        types_or: [c, c++, c++-header]
+        args: ['-i']
+        exclude: 'build/|managed_components/'
+
+  # Python formatting
+  - repo: https://github.com/psf/black
+    rev: 24.1.1
+    hooks:
+      - id: black
+        language_version: python3.11
+        exclude: 'build/|\.venv/'
+
+  # Python linting
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        args: ['--max-line-length=100', '--ignore=E203,W503']
+        exclude: 'build/|\.venv/'
+
+  # Markdown linting
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.39.0
+    hooks:
+      - id: markdownlint
+        args: ['--fix']
+        exclude: 'build/'
+
+  # Spell checking
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+      - id: codespell
+        args: [
+          '--skip=*.bin,*.elf,*.map,build,*.git',
+          '--ignore-words-list=ser,ot,thead'
+        ]
+
+  # Check for secrets
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: 'build/|\.venv/|package-lock\.json'
+
+  # reStructuredText linting
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: v6.2.0
+    hooks:
+      - id: rstcheck
+        additional_dependencies: [sphinx]
+        args: ['--report-level=warning']
+
+  # Custom hook for license headers
+  - repo: local
+    hooks:
+      - id: check-license-headers
+        name: Check GPL-3.0 license headers
+        entry: python3 scripts/check_license_headers.py
+        language: python
+        types_or: [c, c++, c++-header]
+        exclude: 'build/|managed_components/'
+
+      - id: no-commit-to-main
+        name: Don't commit directly to main
+        entry: bash -c 'if [ "$PRE_COMMIT_FROM_REF" = "refs/heads/main" ]; then echo "Direct commits to main are not allowed"; exit 1; fi'
+        language: system
+        pass_filenames: false
+        always_run: true

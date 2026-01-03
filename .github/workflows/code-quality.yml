@@ -1,0 +1,101 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  clang-format:
+    name: Check C/C++ Formatting
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Install clang-format
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-format-14
+      
+      - name: Check formatting
+        run: |
+          find software -name '*.c' -o -name '*.h' -o -name '*.cpp' | \
+            xargs clang-format-14 --dry-run --Werror
+
+  markdown-lint:
+    name: Lint Markdown
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Lint markdown files
+        uses: articulate/actions-markdownlint@v1
+        with:
+          config: .markdownlint.json
+          files: '**/*.md'
+          ignore: |
+            software/firmware-s3/build
+            software/firmware-h2/build
+
+  license-check:
+    name: Check License Headers
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Check license headers in C/H files
+        run: |
+          EXIT_CODE=0
+          for file in $(find software -name '*.c' -o -name '*.h' | grep -v build); do
+            if ! grep -q "GPL-3.0" "$file"; then
+              echo "❌ Missing GPL-3.0 license header: $file"
+              EXIT_CODE=1
+            fi
+          done
+          if [ $EXIT_CODE -eq 0 ]; then
+            echo "✅ All source files have license headers"
+          fi
+          exit $EXIT_CODE
+
+  rst-lint:
+    name: Lint reStructuredText
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install rstcheck
+        run: pip install rstcheck
+      
+      - name: Lint RST files
+        run: |
+          find . -name '*.rst' | xargs rstcheck --report-level warning
+
+  spell-check:
+    name: Spell Check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run spell checker
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          files: |
+            **/*.md
+            **/*.rst
+          config: .cspell.json

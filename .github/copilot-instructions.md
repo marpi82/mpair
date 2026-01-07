@@ -2,36 +2,36 @@
 
 ## Project Overview
 
-**mpair** is an ESP32-based air quality monitoring station with dual MCU architecture:
+**mpair** is an ESP32-based air quality monitoring station with single MCU architecture:
 
-- **ESP32-S3** (main controller): Sensor reading, Ethernet/PoE, data processing, web server
-- **ESP32-H2** (gateway): Matter/Thread protocol, smart home integration
-- **Communication**: UART packet protocol between S3↔H2 (see `software/common/uart_protocol.h`)
+- **ESP32-C6** (all-in-one controller): Sensor reading, Ethernet/PoE, WiFi 6, Matter/Thread, data processing, web server
+- **Native 802.15.4 radio**: Built-in Thread/Matter support
+- **Power**: PoE+ or DC jack with RT5300B-12V + TX4138 buck converters
+- **Programming**: CP2102 USB-UART converter
 
 ## Architecture & Data Flow
 
 ```text
-Sensors → ESP32-S3 → UART Protocol → ESP32-H2 → Matter/Thread Network
-                  ↓
-            Ethernet/PoE → MQTT/Prometheus/HTTP → External Services
+Sensors → ESP32-C6 → Ethernet/WiFi → MQTT/Prometheus/HTTP → External Services
+              ↓
+        Matter/Thread Network (native 802.15.4)
 ```
 
 **Critical architectural decisions:**
 
-- Dual MCU separates concerns: S3 handles I/O-heavy sensor work, H2 manages Thread mesh networking
-- UART protocol uses packet-based communication with checksums (custom implementation, not standard UART)
-- Power system supports both PoE+ and DC jack (RT5300B-12V + TX4138 buck converters for 12V/5V/3.3V rails)
+- Single MCU design simplifies development and reduces power consumption
+- ESP32-C6 combines WiFi, BLE, and 802.15.4 radios for complete connectivity
+- Power system supports both PoE+ and DC jack (12V/5V/3.3V rails)
 - HECA system (heater) reduces humidity before PM sensor to prevent water droplet measurement errors
 
 ## Build System & Workflows
 
 ### ESP-IDF Project Structure
 
-Both firmwares use ESP-IDF v5.5.2 with CMake:
+Firmware uses ESP-IDF v5.5.2 with CMake:
 
-- **firmware-s3/**: `idf.py build` (target: esp32s3)
-- **firmware-h2/**: `idf.py build` (target: esp32h2)
-- Build artifacts in `build/` directories (git-ignored)
+- **firmware-c6/**: `idf.py build` (target: esp32c6)
+- Build artifacts in `build/` directory (git-ignored)
 
 ### Essential Commands
 
@@ -39,22 +39,21 @@ Both firmwares use ESP-IDF v5.5.2 with CMake:
 # Activate ESP-IDF environment (REQUIRED before any idf.py command)
 . ~/esp/esp-idf/export.sh
 
-# Build (from firmware-s3/ or firmware-h2/)
+# Build (from firmware-c6/)
 idf.py build
 
 # Flash and monitor (specify port)
-idf.py -p /dev/ttyACM0 flash monitor  # S3 typically ACM0
-idf.py -p /dev/ttyACM1 flash monitor  # H2 typically ACM1
+idf.py -p /dev/ttyUSB0 flash monitor
 
 # VS Code integration - use tasks (Ctrl+Shift+B)
-# See .vscode/tasks.json for "Build + Flash + Monitor" compound tasks
+# See .vscode/tasks.json for "Build + Flash + Monitor" compound task
 ```
 
 ### Configuration
 
 - `sdkconfig.defaults`: Default configuration (committed)
 - `sdkconfig`: Generated config (git-ignored, DO NOT commit)
-- `partitions.csv`: Partition tables for OTA updates
+- `partitions.csv`: Partition table with OTA support
 - Use `idf.py menuconfig` for configuration changes, then update `sdkconfig.defaults`
 
 ## Code Conventions & Patterns
@@ -87,20 +86,8 @@ Pre-commit hooks will reject commits without license headers.
 
 ### Component Organization
 
-- Shared code → `software/common/` (UART protocol, data structures)
-- S3-specific → `software/firmware-s3/components/` (future: sensors, network, display, heater)
-- H2-specific → `software/firmware-h2/components/` (future: uart_bridge, matter_device)
+- C6-specific → `software/firmware-c6/components/` (future: sensors, network, display, heater, matter)
 - Use ESP-IDF component system: each component has its own `CMakeLists.txt`
-
-### UART Protocol Pattern
-
-When working with S3↔H2 communication:
-
-1. All packets use `uart_protocol.h` structures
-2. Commands defined in `uart_cmd_t` enum
-3. Always calculate checksums with `uart_proto_calculate_checksum()`
-4. Data structures are `__attribute__((packed))` for binary transmission
-5. Example: `pm_data_t`, `co2_data_t` in `uart_protocol.h`
 
 ## Development Workflow
 
@@ -124,13 +111,13 @@ Hooks run automatically on commit:
 ### VS Code Integration
 
 - **IntelliSense**: Configured for ESP-IDF in `.vscode/settings.json`
-- **Build task**: `Ctrl+Shift+B` or `F7` (builds firmware-s3 by default)
+- **Build task**: `Ctrl+Shift+B` or `F7`
 - **Flash/Monitor**: Use Task menu (`Ctrl+Shift+P` → "Tasks: Run Task")
 - **Debugging**: Launch configurations for OpenOCD/GDB debugging (requires hardware debugger)
 
 ### Testing Changes
 
-1. Build both firmwares to catch cross-dependencies
+1. Build firmware to check for compilation errors
 2. Run `./scripts/test-tools.sh` for code quality checks
 3. CI will run same checks in GitHub Actions
 
@@ -148,19 +135,19 @@ Hooks run automatically on commit:
 
 - PoE detection via AT-DET signal (through PC817 optocoupler)
 - Buck converter enable pins for power sequencing
-- USB-C for programming only (not primary power in production)
+- CP2102 USB-UART converter for programming and debugging
 
 ### GPIO Constraints
 
-- ESP32-S3: Check `firmware-s3/README.md` GPIO table (TBD - not yet assigned)
-- ESP32-H2: UART pins for S3 communication + internal Thread radio
-- Ethernet RMII uses GPIO 0-9 (cannot be used for other purposes)
+- ESP32-C6: Check `firmware-c6/README.md` GPIO table (TBD - not yet assigned)
+- W5500 Ethernet uses SPI2 interface (MOSI, MISO, SCK, CS, INT, RST)
+- 802.15.4 radio uses internal antenna or external via RF switch
 
 ## CI/CD Pipeline
 
 ### Automated Checks (on push/PR)
 
-- Firmware builds for both S3 and H2
+- Firmware build for C6
 - Code formatting, linting, license headers
 - Documentation validation
 
@@ -172,7 +159,7 @@ git tag -a v0.1.0 -m "Release v0.1.0"
 git push origin v0.1.0
 
 # GitHub Actions automatically:
-# 1. Builds both firmwares
+# 1. Builds firmware
 # 2. Creates release with binaries
 # 3. Generates flash script and checksums
 ```
@@ -186,17 +173,17 @@ git push origin v0.1.0
 ## Common Pitfalls
 
 1. **Forgetting to activate ESP-IDF**: Always `. ~/esp/esp-idf/export.sh` before `idf.py`
-2. **Wrong USB port**: S3 and H2 are separate devices, typically /dev/ttyACM0 and /dev/ttyACM1
+2. **Wrong USB port**: CP2102 usually appears as `/dev/ttyUSB0` (Linux) or
+   `/dev/cu.SLAB_USBtoUART` (macOS) - check with `ls /dev/ttyUSB*` or `dmesg`
 3. **Committing sdkconfig**: Only commit `sdkconfig.defaults`, not generated `sdkconfig`
 4. **Missing license headers**: Pre-commit will catch this, but add early to avoid rebasing
 5. **Direct commits to main**: Pre-commit hook prevents this - use feature branches
-6. **UART protocol changes**: Update BOTH S3 and H2 firmware together, protocol is tightly coupled
-7. **Binary files in git**: Build artifacts are git-ignored, never force-add `.bin`/`.elf` files
+6. **Binary files in git**: Build artifacts are git-ignored, never force-add `.bin`/`.elf` files
 
 ## External Dependencies
 
 - **ESP-IDF v5.5.2**: Core framework (Docker image: `espressif/idf:v5.5.2`)
-- **ESP-Matter**: Optional for H2 firmware Matter support
+- **ESP-Matter**: Optional for Matter support
 - **Sensor libraries**: Will be added as ESP-IDF components (future work)
 - **Network protocols**: MQTT, HTTP, Prometheus client libraries
 
@@ -206,7 +193,7 @@ git push origin v0.1.0
 - `docs/ESP-IDF-SETUP.md`: Environment setup guide
 - `docs/CI-CD.md`: CI/CD pipeline documentation
 - `LICENSE-*.rst`: Separate licenses for hardware/software/docs
-- Component READMEs in each firmware/component directory
+- Component READMEs in firmware-c6/components/ directories
 
 ## Future Architecture Notes
 

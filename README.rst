@@ -25,17 +25,17 @@ Features
 Hardware Features
 -----------------
 
-* **Dual MCU Architecture**
+* **Single MCU Architecture**
 
-  * ESP32-S3-WROOM-1-N16R8 (main controller)
-  * ESP32-H2-MINI-1-N4 (Matter/Thread connectivity)
+  * ESP32-C6-WROOM-1-N8 (all-in-one controller with integrated 802.15.4 radio)
 
 * **Connectivity**
 
-  * Matter over Thread support
-  * Fast Ethernet 100Mbps (LAN8710A)
+  * Matter over Thread support (native 802.15.4 radio)
+  * WiFi 6 (802.11ax) 2.4GHz
+  * Ethernet 10/100Mbps via W5500 (SPI)
   * PoE/PoE+ (802.3af/at) with RT5300B-12V or 12V DC jack
-  * USB-C for programming and debugging
+  * CP2102 USB-UART converter for programming
 
 * **Sensors**
 
@@ -74,17 +74,16 @@ Technical Specifications
 Power Supply
 ------------
 
-* **Input:** PoE/PoE+ (802.3af/at), 12V DC jack, or USB-C (5V for programming only)
+* **Input:** PoE/PoE+ (802.3af/at) or 12V DC jack
 * **Power Rails:** 12V, 5V, 3.3V (isolated Buck converters with TX4138)
 * **Consumption:** TBD
 
 Communication Interfaces
 ------------------------
 
-* **Ethernet:** 100Mbps via LAN8710A (RMII)
-* **Wireless:** Matter over Thread via ESP32-H2
-* **USB:** USB 2.0 Full Speed via ESP32-S3
-* **Inter-MCU:** UART (ESP32-S3 ↔ ESP32-H2)
+* **Ethernet:** 10/100Mbps via W5500 (SPI)
+* **Wireless:** WiFi 6 (802.11ax) 2.4GHz, Matter over Thread (native 802.15.4 radio)
+* **USB-UART:** CP2102 converter for programming and debugging
 
 Measurement Ranges
 ------------------
@@ -223,7 +222,7 @@ Roadmap
 =======
 
 * ☐ PCB design and prototyping
-* ☐ Firmware development (ESP32-S3 + ESP32-H2)
+* ☐ Firmware development (ESP32-C6)
 * ☐ Matter device type implementation
 * ☐ Home Assistant integration and testing
 * ☐ Enclosure design (3D printable)

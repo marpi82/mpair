@@ -25,17 +25,17 @@ Funkcje
 Funkcje Sprzętowe
 -----------------
 
-* **Architektura Dual MCU**
+* **Architektura Single MCU**
 
-  * ESP32-S3-WROOM-1-N16R8 (główny kontroler)
-  * ESP32-H2-MINI-1-N4 (łączność Matter/Thread)
+  * ESP32-C6-WROOM-1-N16 (kontroler all-in-one ze zintegrowanym radiem 802.15.4)
 
 * **Łączność**
 
-  * Obsługa Matter over Thread
-  * Fast Ethernet 100Mbps (LAN8710A)
+  * Obsługa Matter over Thread (natywne radio 802.15.4)
+  * WiFi 6 (802.11ax) 2.4GHz
+  * Ethernet 10/100Mbps przez W5500 (SPI)
   * PoE/PoE+ (802.3af/at) z RT5300B-12V lub wtyk DC 12V
-  * USB-C do programowania i debugowania
+  * Konwerter USB-UART CP2102 do programowania
 
 * **Czujniki**
 
@@ -74,17 +74,16 @@ Specyfikacja Techniczna
 Zasilanie
 ---------
 
-* **Wejście:** PoE/PoE+ (802.3af/at), wtyk DC 12V lub USB-C (5V tylko do programowania)
+* **Wejście:** PoE/PoE+ (802.3af/at) lub wtyk DC 12V
 * **Szyny Zasilania:** 12V, 5V, 3.3V (izolowane przetwornice Buck z TX4138)
 * **Pobór Mocy:** TBD
 
 Interfejsy Komunikacyjne
 -------------------------
 
-* **Ethernet:** 100Mbps przez LAN8710A (RMII)
-* **Bezprzewodowy:** Matter over Thread przez ESP32-H2
-* **USB:** USB 2.0 Full Speed przez ESP32-S3
-* **Inter-MCU:** UART (ESP32-S3 ↔ ESP32-H2)
+* **Ethernet:** 10/100Mbps przez W5500 (SPI)
+* **Bezprzewodowy:** WiFi 6 (802.11ax) 2.4GHz, Matter over Thread (natywne radio 802.15.4)
+* **USB-UART:** Konwerter CP2102 do programowania i debugowania
 
 Zakresy Pomiarowe
 -----------------
@@ -223,7 +222,7 @@ Plan Rozwoju
 ============
 
 * ☐ Projekt PCB i prototypowanie
-* ☐ Rozwój firmware (ESP32-S3 + ESP32-H2)
+* ☐ Rozwój firmware (ESP32-C6)
 * ☐ Implementacja typu urządzenia Matter
 * ☐ Integracja i testy z Home Assistant
 * ☐ Projekt obudowy (do druku 3D)

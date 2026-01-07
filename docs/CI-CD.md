@@ -10,8 +10,7 @@ Runs on every push and pull request to `main` and `develop` branches.
 
 **Jobs:**
 
-- `build-s3` - Builds ESP32-S3 firmware
-- `build-h2` - Builds ESP32-H2 firmware
+- `build-c6` - Builds ESP32-C6 firmware
 - `build-summary` - Reports overall build status
 
 **Docker Image:** `espressif/idf:v5.5.2`
@@ -36,7 +35,7 @@ Triggers on version tags (`v*.*.*`) or manual workflow dispatch.
 
 **Process:**
 
-1. Build both firmwares
+1. Build firmware
 2. Generate release artifacts:
    - Firmware binaries
    - Bootloader
@@ -123,13 +122,8 @@ Add these badges to your README:
 ### Test build locally with Docker
 
 ```bash
-# ESP32-S3
-docker run --rm -v $PWD:/project -w /project/software/firmware-s3 \
-  espressif/idf:v5.5.2 \
-  bash -c ". \$IDF_PATH/export.sh && idf.py build"
-
-# ESP32-H2
-docker run --rm -v $PWD:/project -w /project/software/firmware-h2 \
+# ESP32-C6
+docker run --rm -v $PWD:/project -w /project/software/firmware-c6 \
   espressif/idf:v5.5.2 \
   bash -c ". \$IDF_PATH/export.sh && idf.py build"
 ```

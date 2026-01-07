@@ -6,9 +6,7 @@ Embedded software for the mpair air quality monitoring station.
 
 ```text
 software/
-├── firmware-s3/         # ESP32-S3 main controller firmware
-├── firmware-h2/         # ESP32-H2 Matter/Thread gateway firmware
-├── common/              # Shared code and definitions
+├── firmware-c6/         # ESP32-C6 firmware with integrated Matter/Thread
 ├── tests/               # Unit and integration tests
 └── tools/               # Development and flashing tools
 ```
@@ -19,11 +17,11 @@ software/
 
 1. **ESP-IDF v5.5.2**
    - Follow installation guide in `docs/ESP-IDF-SETUP.md`
-   - Support for both ESP32-S3 and ESP32-H2 required
+   - ESP32-C6 support required
 
 2. **ESP-Matter** (optional, for Matter support)
    - Required for full Matter/Thread functionality
-   - See `firmware-h2/README.md`
+   - See `firmware-c6/README.md`
 
 3. **Development Tools**
    - CMake 3.16+
@@ -41,12 +39,8 @@ cd mpair/software
 # Set up ESP-IDF environment
 . ~/esp/esp-idf/export.sh
 
-# Build ESP32-S3 firmware
-cd firmware-s3
-idf.py build
-
-# Build ESP32-H2 firmware
-cd ../firmware-h2
+# Build ESP32-C6 firmware
+cd firmware-c6
 idf.py build
 ```
 
@@ -54,42 +48,26 @@ idf.py build
 
 ### Building
 
-Each firmware can be built independently:
-
 ```bash
-# ESP32-S3
-cd firmware-s3
-idf.py build
-
-# ESP32-H2
-cd firmware-h2
+cd firmware-c6
 idf.py build
 ```
 
 ### Flashing
 
-Connect both ESP32 modules via USB:
+Connect ESP32-C6 via USB:
 
 ```bash
-# Flash S3 (usually /dev/ttyACM0)
-cd firmware-s3
+cd firmware-c6
 idf.py -p /dev/ttyACM0 flash
-
-# Flash H2 (usually /dev/ttyACM1)
-cd firmware-h2
-idf.py -p /dev/ttyACM1 flash
 ```
 
 ### Monitoring
 
-Monitor serial output from both devices:
+Monitor serial output:
 
 ```bash
-# Terminal 1 - ESP32-S3
 idf.py -p /dev/ttyACM0 monitor
-
-# Terminal 2 - ESP32-H2
-idf.py -p /dev/ttyACM1 monitor
 ```
 
 ### Testing
@@ -100,7 +78,7 @@ cd tests
 pytest
 
 # Run on-device tests
-cd firmware-s3
+cd firmware-c6
 idf.py build flash monitor test
 ```
 
@@ -117,35 +95,22 @@ See `.vscode/` directory for configuration.
 
 ## Architecture
 
-### ESP32-S3 (Main Controller)
+### ESP32-C6 (Single MCU Design)
 
-- **Role**: Sensor reading, data processing, networking
-- **Interfaces**: Ethernet, USB, UART, I2C, SPI, GPIO
+- **Role**: All-in-one controller
+- **Interfaces**: Ethernet, USB, UART, I2C, SPI, GPIO, IEEE 802.15.4
 - **Sensors**: SPS30, MH-Z14A, SHT31, BME280, GPS
-- **Protocols**: MQTT, HTTP, Prometheus, Luftdaten
-
-### ESP32-H2 (Matter/Thread)
-
-- **Role**: Thread network, Matter device
-- **Interfaces**: UART (to S3), IEEE 802.15.4 radio
-- **Protocols**: Thread, Matter, BLE (commissioning)
-
-### Communication
-
-The two MCUs communicate via UART using a simple packet protocol:
-
-- Sensor data: S3 → H2 → Matter network
-- Commands: Matter network → H2 → S3
+- **Protocols**: MQTT, HTTP, Prometheus, Luftdaten, Matter, Thread
+- **Features**: Native Thread radio, WiFi 2.4GHz, BLE 5.0
 
 ## Components
 
 ### Planned Components
 
 - `sensors/` - Driver abstraction for all sensors
-- `network/` - Ethernet, MQTT, HTTP clients
+- `network/` - Ethernet, WiFi, MQTT, HTTP clients
 - `display/` - OLED driver and UI
 - `heater/` - HECA control logic
-- `uart_bridge/` - S3↔H2 communication protocol
 - `matter_device/` - Matter air quality sensor implementation
 - `web_server/` - Configuration web interface
 - `prometheus/` - Metrics exporter

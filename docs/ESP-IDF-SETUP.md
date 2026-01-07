@@ -31,19 +31,18 @@ cd ~/esp
 git clone -b v5.5.2 --recursive https://github.com/espressif/esp-idf.git
 ```
 
-**Note**: We use ESP-IDF v5.5.2 for best support of ESP32-S3 and ESP32-H2.
+**Note**: We use ESP-IDF v5.5.2 for best support of ESP32-C6.
 
 #### 3. Install ESP-IDF Tools
 
 ```bash
 cd ~/esp/esp-idf
-./install.sh esp32s3,esp32h2
+./install.sh esp32c6
 ```
 
 This will download and install:
 
-- Xtensa toolchain (for ESP32-S3)
-- RISC-V toolchain (for ESP32-H2)
+- RISC-V toolchain (for ESP32-C6)
 - OpenOCD (for debugging)
 - Python dependencies
 
@@ -94,7 +93,7 @@ Run `esp-idf-tools-setup-x.x.x.exe` and follow the installer.
 Select:
 
 - ESP-IDF v5.5.2
-- ESP32-S3 and ESP32-H2 targets
+- ESP32-C6 target
 - All tools
 
 #### 2. Use ESP-IDF Command Prompt
@@ -131,12 +130,10 @@ Create udev rules for ESP32:
 
 ```bash
 sudo tee /etc/udev/rules.d/99-esp32.rules > /dev/null <<'EOF'
-# ESP32 USB-JTAG
+# ESP32-C6 USB-JTAG
 ATTRS{idVendor}=="303a", ATTRS{idProduct}=="1001", MODE="0666"
-# ESP32-S3 USB-OTG
-ATTRS{idVendor}=="303a", ATTRS{idProduct}=="1002", MODE="0666"
-# ESP32-H2
-ATTRS{idVendor}=="303a", ATTRS{idProduct}=="1003", MODE="0666"
+# CP2102 USB-UART converter
+ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE="0666"
 EOF
 
 sudo udevadm control --reload-rules
@@ -157,8 +154,7 @@ dmesg -w
 
 Typically:
 
-- ESP32-S3: `/dev/ttyACM0`
-- ESP32-H2: `/dev/ttyACM1`
+- ESP32-C6 via CP2102: `/dev/ttyUSB0`
 
 ### macOS
 
@@ -168,8 +164,7 @@ ls -l /dev/cu.*
 
 Typically:
 
-- ESP32-S3: `/dev/cu.usbmodem*`
-- ESP32-H2: `/dev/cu.usbmodem*`
+- ESP32-C6 via CP2102: `/dev/cu.SLAB_USBtoUART` or `/dev/cu.usbserial-*`
 
 ### Windows
 
@@ -184,7 +179,7 @@ Test with the mpair firmware:
 get_idf
 
 # Navigate to firmware
-cd ~/path/to/mpair/software/firmware-s3
+cd ~/path/to/mpair/software/firmware-c6
 
 # Configure (optional)
 idf.py menuconfig
@@ -192,11 +187,11 @@ idf.py menuconfig
 # Build
 idf.py build
 
-# Flash (replace /dev/ttyACM0 with your port)
-idf.py -p /dev/ttyACM0 flash
+# Flash (replace /dev/ttyUSB0 with your port)
+idf.py -p /dev/ttyUSB0 flash
 
 # Monitor serial output
-idf.py -p /dev/ttyACM0 monitor
+idf.py -p /dev/ttyUSB0 monitor
 
 # Exit monitor: Ctrl+]
 ```
@@ -234,14 +229,14 @@ Press `Ctrl+Shift+P` → `Tasks: Run Task` to see all available tasks.
 
 Run `get_idf` to activate ESP-IDF environment.
 
-### "Permission denied" on /dev/ttyACM0
+### "Permission denied" on /dev/ttyUSB0
 
 ```bash
 # Add user to dialout group
 sudo usermod -a -G dialout $USER
 
 # Or run with sudo (not recommended)
-sudo idf.py -p /dev/ttyACM0 flash
+sudo idf.py -p /dev/ttyUSB0 flash
 ```
 
 ### "Failed to connect to ESP32"
@@ -284,8 +279,7 @@ get_idf
 
 - **ESP-IDF Documentation**: <https://docs.espressif.com/projects/esp-idf/>
 - **ESP-IDF GitHub**: <https://github.com/espressif/esp-idf>
-- **ESP32-S3 Datasheet**: <https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf>
-- **ESP32-H2 Datasheet**: <https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf>
+- **ESP32-C6 Datasheet**: <https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf>
 - **Forum**: <https://esp32.com/>
 - **Discord**: <https://discord.gg/esp32>
 

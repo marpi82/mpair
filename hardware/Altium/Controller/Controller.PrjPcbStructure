@@ -1,5 +1,5 @@
-Record=TopLevelDocument|FileName=CPU.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=LAN interface.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=LAN PHY.SchDoc|SheetNumber=5
-Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Power adapter.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Power over Ethernet.SchDoc|SheetNumber=4
+Record=TopLevelDocument|FileName=CPU.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Ethernet interface.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Ethernet PHY.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Power adapter.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Power over Ethernet.SchDoc|SheetNumber=2

@@ -1,5 +1,6 @@
-Record=TopLevelDocument|FileName=CPU.SchDoc|SheetNumber=5
+Record=TopLevelDocument|FileName=CPU.SchDoc|SheetNumber=6
 Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Ethernet interface.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Ethernet PHY.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Power adapter.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Ethernet PHY.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Power adapter.SchDoc|SheetNumber=3
 Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Power over Ethernet.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=USB to UART controller.SchDoc|SheetNumber=5

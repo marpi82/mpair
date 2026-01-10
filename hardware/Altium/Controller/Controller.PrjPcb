@@ -102,9 +102,9 @@ DocumentUniqueId=KJYAOKPQ
 
 [Document4]
 DocumentPath=Ethernet PHY.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=3
@@ -118,10 +118,27 @@ GenerateClassCluster=0
 DocumentUniqueId=TWWZDXMN
 
 [Document5]
-DocumentPath=CPU.SchDoc
-AnnotationEnabled=0
+DocumentPath=USB to UART controller.SchDoc
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=HKOGGXSC
+
+[Document6]
+DocumentPath=CPU.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=4
@@ -134,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NNXWQJVL
 
-[Document6]
+[Document7]
 DocumentPath=Controller.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document8]
 DocumentPath=Controller.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1

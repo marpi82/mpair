@@ -39,8 +39,7 @@ jobs:
           config: .markdownlint.json
           files: '**/*.md'
           ignore: |
-            software/firmware-s3/build
-            software/firmware-h2/build
+            software/firmware-c6/build
 
   license-check:
     name: Check License Headers

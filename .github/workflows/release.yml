@@ -34,14 +34,8 @@ jobs:
             echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
           fi
 
-      - name: Build ESP32-S3 firmware
-        working-directory: software/firmware-s3
-        run: |
-          . ${IDF_PATH}/export.sh
-          idf.py build
-
-      - name: Build ESP32-H2 firmware
-        working-directory: software/firmware-h2
+      - name: Build ESP32-C6 firmware
+        working-directory: software/firmware-c6
         run: |
           . ${IDF_PATH}/export.sh
           idf.py build
@@ -50,15 +44,10 @@ jobs:
         run: |
           mkdir -p release
 
-          # ESP32-S3 files
-          cp software/firmware-s3/build/mpair-s3.bin release/mpair-s3-v${{ steps.version.outputs.VERSION }}.bin
-          cp software/firmware-s3/build/bootloader/bootloader.bin release/mpair-s3-bootloader.bin
-          cp software/firmware-s3/build/partition_table/partition-table.bin release/mpair-s3-partition-table.bin
-
-          # ESP32-H2 files
-          cp software/firmware-h2/build/mpair-h2.bin release/mpair-h2-v${{ steps.version.outputs.VERSION }}.bin
-          cp software/firmware-h2/build/bootloader/bootloader.bin release/mpair-h2-bootloader.bin
-          cp software/firmware-h2/build/partition_table/partition-table.bin release/mpair-h2-partition-table.bin
+          # ESP32-C6 files
+          cp software/firmware-c6/build/mpair-c6.bin release/mpair-c6-v${{ steps.version.outputs.VERSION }}.bin
+          cp software/firmware-c6/build/bootloader/bootloader.bin release/mpair-c6-bootloader.bin
+          cp software/firmware-c6/build/partition_table/partition-table.bin release/mpair-c6-partition-table.bin
 
           # Create flash script
           cat > release/flash.sh <<'EOF'
@@ -67,23 +56,14 @@ jobs:
 
           echo "Flashing mpair firmware..."
 
-          # Flash ESP32-S3
-          echo "Flashing ESP32-S3..."
-          esptool.py --chip esp32s3 -p ${S3_PORT:-/dev/ttyACM0} -b 460800 \
+          # Flash ESP32-C6
+          echo "Flashing ESP32-C6..."
+          esptool.py --chip esp32c6 -p ${C6_PORT:-/dev/ttyACM0} -b 460800 \
             --before=default_reset --after=hard_reset write_flash \
             --flash_mode dio --flash_freq 80m --flash_size 16MB \
-            0x0 mpair-s3-bootloader.bin \
-            0x8000 mpair-s3-partition-table.bin \
-            0x10000 mpair-s3-v${{ steps.version.outputs.VERSION }}.bin
-
-          # Flash ESP32-H2
-          echo "Flashing ESP32-H2..."
-          esptool.py --chip esp32h2 -p ${H2_PORT:-/dev/ttyACM1} -b 460800 \
-            --before=default_reset --after=hard_reset write_flash \
-            --flash_mode dio --flash_freq 48m --flash_size 4MB \
-            0x0 mpair-h2-bootloader.bin \
-            0x8000 mpair-h2-partition-table.bin \
-            0x10000 mpair-h2-v${{ steps.version.outputs.VERSION }}.bin
+            0x0 mpair-c6-bootloader.bin \
+            0x8000 mpair-c6-partition-table.bin \
+            0x10000 mpair-c6-v${{ steps.version.outputs.VERSION }}.bin
 
           echo "✅ Flashing complete!"
           EOF
@@ -127,9 +107,8 @@ jobs:
             ### Option 1: Use flash script (Linux/macOS)
             ```bash
             # Download all files
-            # Set USB ports (optional, defaults to /dev/ttyACM0 and /dev/ttyACM1)
-            export S3_PORT=/dev/ttyACM0
-            export H2_PORT=/dev/ttyACM1
+            # Set USB ports (optional, defaults to /dev/ttyACM0)
+            export C6_PORT=/dev/ttyACM0
 
             # Run flash script
             ./flash.sh

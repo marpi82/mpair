@@ -1,6 +1,12 @@
 # Ignore EasyEDA backup folder
-hardware/EasyEDA/mpair_backup/
+hardware/EasyEDA/*_backup/
 
 # Ignore Altium history and previews folders
 hardware/Altium/*/History/
 hardware/Altium/*/__Previews/
+
+# Ignore KiCad temporary and backup files
+hardware/KiCAD/*-backup*
+hardware/KiCAD/~*
+hardware/KiCAD/fp-*-cache
+hardware/KiCAD/*.bak

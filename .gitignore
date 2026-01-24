@@ -10,7 +10,7 @@ hardware/KiCAD/*-backup*
 hardware/KiCAD/~*
 hardware/KiCAD/fp-*-cache
 hardware/KiCAD/*.bak
-hardware/KiCAD/*auto_save*
+hardware/KiCAD/*auto*save*
 
 # remove Altium and EasyEDA projects from projects folder
 hardware/Altium/*

@@ -1,8 +1,0 @@
-Record=TopLevelDocument|FileName=Alternate power.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=Alternate power.SchDoc|FileName=CPU.SchDoc|SheetNumber=7
-Record=NoMainPathDocument|SourceDocument=Alternate power.SchDoc|FileName=Ethernet interface.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Alternate power.SchDoc|FileName=Ethernet PHY.SchDoc|SheetNumber=5
-Record=NoMainPathDocument|SourceDocument=Alternate power.SchDoc|FileName=Periphery.SchDoc|SheetNumber=8
-Record=NoMainPathDocument|SourceDocument=Alternate power.SchDoc|FileName=Power adapter.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Alternate power.SchDoc|FileName=Power over Ethernet.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=Alternate power.SchDoc|FileName=USB to UART controller.SchDoc|SheetNumber=6

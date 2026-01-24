@@ -437,16 +437,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "SN74AHCT1G125DCKR"
-			(at 156.21 86.36 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "296-4709-1-ND"
 			(at 156.21 86.36 0)
 			(effects
 				(font
@@ -483,6 +474,69 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "SN74AHCT1G125DCKR"
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Texas Instruments"
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "5-TSSOP, SC-70-5, SOT-353"
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 156.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 156.21 86.36 0)
 			(effects
 				(font
@@ -533,7 +587,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330Ω/0603"
+		(property "Value" "330Ω"
 			(at 174.752 84.582 90)
 			(effects
 				(font
@@ -569,16 +623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS0603330RFKEA"
-			(at 171.45 86.36 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-330HCT-ND"
 			(at 171.45 86.36 90)
 			(effects
 				(font
@@ -605,7 +650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 171.45 86.36 90)
 			(effects
 				(font
@@ -614,7 +659,70 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 171.45 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW0603330RFKEA"
+			(at 171.45 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 171.45 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
+			(at 171.45 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 171.45 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 171.45 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 171.45 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 171.45 86.36 90)
 			(effects
 				(font

@@ -4616,6 +4616,12 @@
 		(uuid "abbaffe4-4a9a-459c-b578-e2c2efbe3c89")
 	)
 	(junction
+		(at 49.53 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad7865e5-e766-4808-9244-d45e33f156ee")
+	)
+	(junction
 		(at 147.32 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5201,6 +5207,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 144.78) (xy 91.44 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "308c34b5-0e01-4e2e-9607-91f42ef87824")
+	)
+	(wire
+		(pts
 			(xy 201.93 102.87) (xy 208.28 102.87)
 		)
 		(stroke
@@ -5588,6 +5604,16 @@
 			(type default)
 		)
 		(uuid "538c3165-8db3-47da-a79b-6cda86510463")
+	)
+	(wire
+		(pts
+			(xy 49.53 129.54) (xy 49.53 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5505fce4-2e54-486e-98f6-b190a1bd1e1b")
 	)
 	(wire
 		(pts
@@ -6108,6 +6134,16 @@
 			(type default)
 		)
 		(uuid "9674cc61-77f9-4040-9ff9-af18d40d32af")
+	)
+	(wire
+		(pts
+			(xy 46.99 129.54) (xy 49.53 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b536e18-b730-42ce-b08f-17678ad7e859")
 	)
 	(wire
 		(pts
@@ -7059,6 +7095,16 @@
 		)
 		(uuid "ffadeaab-6eea-47f6-8a5d-a352e348aa6f")
 	)
+	(label "VSS"
+		(at 67.31 139.7 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f4d9710-1c7f-416e-a1b8-334f1712fee8")
+	)
 	(label "GATE"
 		(at 134.62 59.69 180)
 		(effects
@@ -7068,6 +7114,16 @@
 			(justify right bottom)
 		)
 		(uuid "980e3474-2c79-4a63-ac5f-7d784a5fd9a9")
+	)
+	(label "VDD"
+		(at 67.31 99.06 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5d32d57-81b2-4714-97d4-6fae3796c622")
 	)
 	(hierarchical_label "T2Pb"
 		(shape output)
@@ -7101,6 +7157,17 @@
 			(justify right)
 		)
 		(uuid "781188b6-e405-473b-b82d-95ca9986d1b1")
+	)
+	(hierarchical_label "AUXGND"
+		(shape passive)
+		(at 46.99 129.54 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right)
+		)
+		(uuid "78acfda3-3379-4bb8-90bc-d431583b483c")
 	)
 	(hierarchical_label "+12V"
 		(shape passive)
@@ -7186,15 +7253,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 115.57 59.69 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -7299,7 +7357,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a038ae9-f605-44f4-b0d7-fb9c0bf31795")
-		(property "Reference" "D11"
+		(property "Reference" "D12"
 			(at 182.88 115.5699 90)
 			(effects
 				(font
@@ -7342,15 +7400,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 185.42 116.84 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -7439,7 +7488,7 @@
 		(instances
 			(project ""
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D11")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -7495,15 +7544,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 139.7 113.03 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -7613,7 +7653,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kΩ/0603"
+		(property "Value" "100kΩ"
 			(at 73.152 109.982 90)
 			(effects
 				(font
@@ -7649,16 +7689,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06031K00FKEA"
-			(at 69.85 111.76 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-100KHCT-ND"
 			(at 69.85 111.76 0)
 			(effects
 				(font
@@ -7685,7 +7716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 69.85 111.76 0)
 			(effects
 				(font
@@ -7694,7 +7725,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW0603100KFKEA"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 69.85 111.76 0)
 			(effects
 				(font
@@ -7774,16 +7832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "HMHA2801A"
-			(at 162.56 106.68 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "HMHA2801AR2VCT-ND"
 			(at 162.56 106.68 0)
 			(effects
 				(font
@@ -7820,6 +7869,33 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 162.56 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "HMHA2801AR2V"
+			(at 162.56 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "onsemi"
+			(at 162.56 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "4-SOIC (0.173\", 4.40mm Width)"
 			(at 162.56 106.68 0)
 			(effects
 				(font
@@ -7867,7 +7943,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS23754PWPR"
+		(property "Value" "TPS23754"
 			(at 113.03 91.44 0)
 			(effects
 				(font
@@ -7943,7 +8019,7 @@
 				(hide yes)
 			)
 		)
-		(property "PACKAGE" "TSSOP-20"
+		(property "PACKAGE" "20-PowerTSSOP"
 			(at 113.03 119.38 0)
 			(effects
 				(font
@@ -7953,16 +8029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "TPS23754PWPR"
-			(at 113.03 119.38 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "296-39367-1-ND"
 			(at 113.03 119.38 0)
 			(effects
 				(font
@@ -7999,6 +8066,24 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 113.03 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TPS23754PWPR"
+			(at 113.03 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Texas Instruments"
 			(at 113.03 119.38 0)
 			(effects
 				(font
@@ -8134,15 +8219,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 146.05 59.69 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "FDS86242CT-ND"
 			(at 146.05 59.69 0)
 			(effects
@@ -8243,7 +8319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13beda22-bdae-4467-8ed7-f6d99ec6418e")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR059"
 			(at 154.94 118.11 0)
 			(effects
 				(font
@@ -8293,7 +8369,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR058")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -8317,7 +8393,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "69,8kΩ/0603"
+		(property "Value" "69,8kΩ"
 			(at 83.058 126.492 90)
 			(effects
 				(font
@@ -8353,16 +8429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS060369K8FKEA"
-			(at 81.28 123.19 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-69.8KHCT-ND"
 			(at 81.28 123.19 0)
 			(effects
 				(font
@@ -8389,7 +8456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 81.28 123.19 0)
 			(effects
 				(font
@@ -8398,7 +8465,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 81.28 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW060369K8FKEA"
+			(at 81.28 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 81.28 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 81.28 123.19 0)
 			(effects
 				(font
@@ -8440,7 +8534,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kΩ/0603"
+		(property "Value" "100kΩ"
 			(at 93.218 126.492 90)
 			(effects
 				(font
@@ -8476,16 +8570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06031K00FKEA"
-			(at 91.44 123.19 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-100KHCT-ND"
 			(at 91.44 123.19 0)
 			(effects
 				(font
@@ -8512,7 +8597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 91.44 123.19 0)
 			(effects
 				(font
@@ -8521,7 +8606,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 91.44 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW0603100KFKEA"
+			(at 91.44 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 91.44 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 91.44 123.19 0)
 			(effects
 				(font
@@ -8555,7 +8667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c1d0113-9fa9-4949-af7b-40d80b1b8c6c")
-		(property "Reference" "D6"
+		(property "Reference" "D7"
 			(at 113.03 62.2299 90)
 			(effects
 				(font
@@ -8614,15 +8726,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -8708,7 +8811,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -8732,7 +8835,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "40,2kΩ/0603"
+		(property "Value" "40,2kΩ"
 			(at 88.138 126.492 90)
 			(effects
 				(font
@@ -8768,16 +8871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS060340K2FKEA"
-			(at 86.36 123.19 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-40.2KHCT-ND"
 			(at 86.36 123.19 0)
 			(effects
 				(font
@@ -8804,7 +8898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 86.36 123.19 0)
 			(effects
 				(font
@@ -8813,7 +8907,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 86.36 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW060340K2FKEA"
+			(at 86.36 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 86.36 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 86.36 123.19 0)
 			(effects
 				(font
@@ -8847,7 +8968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ef4a2e6-d82a-453c-8b7c-84b3c832acec")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR056"
 			(at 147.32 57.15 0)
 			(effects
 				(font
@@ -8897,7 +9018,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR055")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -8957,16 +9078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCWE1206R100FKEA"
-			(at 148.59 67.31 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-2740-1-ND"
 			(at 148.59 67.31 0)
 			(effects
 				(font
@@ -8993,7 +9105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.5W, 1/2W"
 			(at 148.59 67.31 0)
 			(effects
 				(font
@@ -9002,7 +9114,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "RCWE1206R100FKEA"
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "1206"
 			(at 148.59 67.31 0)
 			(effects
 				(font
@@ -9035,7 +9174,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "295da68c-b8b4-462b-822f-37692b607cf2")
-		(property "Reference" "R52"
+		(property "Reference" "R53"
 			(at 210.566 95.25 90)
 			(effects
 				(font
@@ -9076,15 +9215,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 212.09 96.52 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -9170,7 +9300,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "R52")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -9227,15 +9357,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 64.77 120.65 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -9336,7 +9457,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "305481bd-48ca-4a79-b619-9a88afb62ec5")
-		(property "Reference" "R53"
+		(property "Reference" "R54"
 			(at 213.614 121.92 90)
 			(effects
 				(font
@@ -9345,7 +9466,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2,61kΩ/0603"
+		(property "Value" "2,61kΩ"
 			(at 210.312 123.698 90)
 			(effects
 				(font
@@ -9381,16 +9502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06032K61FKEA"
-			(at 212.09 120.65 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-2.61KHCT-ND"
 			(at 212.09 120.65 90)
 			(effects
 				(font
@@ -9417,7 +9529,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.25W, 1/4W"
 			(at 212.09 120.65 90)
 			(effects
 				(font
@@ -9426,7 +9538,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 212.09 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06032K61FKEA"
+			(at 212.09 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 212.09 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0805"
 			(at 212.09 120.65 90)
 			(effects
 				(font
@@ -9444,7 +9583,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "R53")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -9499,15 +9638,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 177.8 76.2 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -9612,7 +9742,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3205b6f2-e7f3-42f4-96e8-f7a4bfb9f550")
-		(property "Reference" "D14"
+		(property "Reference" "D15"
 			(at 204.47 75.5649 90)
 			(effects
 				(font
@@ -9653,15 +9783,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 201.93 76.2 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -9747,7 +9868,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D14")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -9763,7 +9884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33044289-173f-4891-af98-64761fff725b")
-		(property "Reference" "D7"
+		(property "Reference" "D8"
 			(at 156.21 74.9299 90)
 			(effects
 				(font
@@ -9822,15 +9943,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -9916,7 +10028,7 @@
 		(instances
 			(project ""
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D7")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -9940,7 +10052,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2kΩ/0603"
+		(property "Value" "2kΩ"
 			(at 151.638 113.792 90)
 			(effects
 				(font
@@ -9976,16 +10088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06032K00FKEA"
-			(at 149.86 110.49 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-2.00KHCT-ND"
 			(at 149.86 110.49 0)
 			(effects
 				(font
@@ -10021,7 +10124,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06032K00FKEA"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 149.86 110.49 0)
 			(effects
 				(font
@@ -10095,15 +10225,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 195.58 109.22 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -10249,15 +10370,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 224.79 66.04 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "445-3942-1-ND"
 			(at 224.79 66.04 0)
 			(effects
@@ -10363,7 +10475,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4,7Ω/0603"
+		(property "Value" "4,7Ω"
 			(at 99.568 74.422 90)
 			(effects
 				(font
@@ -10399,16 +10511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06034R70FKEA"
-			(at 97.79 71.12 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-4.70HHCT-ND"
 			(at 97.79 71.12 0)
 			(effects
 				(font
@@ -10435,7 +10538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 97.79 71.12 0)
 			(effects
 				(font
@@ -10444,7 +10547,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06034R70FKEA"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 97.79 71.12 0)
 			(effects
 				(font
@@ -10518,15 +10648,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 45.72 116.84 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -10665,15 +10786,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 58.42 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -10818,15 +10930,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 142.24 43.18 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "SRU8028-3R3YCT-ND"
 			(at 142.24 43.18 90)
 			(effects
@@ -10914,7 +11017,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5155bc23-71bc-4881-aecd-8c00fa8245a8")
-		(property "Reference" "R51"
+		(property "Reference" "R52"
 			(at 201.93 110.744 90)
 			(effects
 				(font
@@ -10955,15 +11058,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 203.2 109.22 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -11049,7 +11143,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "R51")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -11073,7 +11167,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24,9kΩ/0603"
+		(property "Value" "24,9kΩ"
 			(at 94.488 108.712 90)
 			(effects
 				(font
@@ -11109,16 +11203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS060324K9FKEA"
-			(at 92.71 105.41 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-24.9KHCT-ND"
 			(at 92.71 105.41 0)
 			(effects
 				(font
@@ -11145,7 +11230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 92.71 105.41 0)
 			(effects
 				(font
@@ -11154,7 +11239,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 92.71 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW060324K9FKEA"
+			(at 92.71 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 92.71 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 92.71 105.41 0)
 			(effects
 				(font
@@ -11227,15 +11339,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 214.63 53.34 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -11369,15 +11472,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 231.14 66.04 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -11524,15 +11618,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 208.28 60.96 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "296-37838-1-ND"
 			(at 208.28 60.96 0)
 			(effects
@@ -11633,7 +11718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d6bb191-2f23-4f9b-8e5e-0cddb842bd71")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR057"
 			(at 148.59 76.2 0)
 			(effects
 				(font
@@ -11683,7 +11768,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR056")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -11716,7 +11801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 184.15 57.15 0)
 			(effects
 				(font
@@ -11743,16 +11828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06032K00FKEA"
-			(at 184.15 57.15 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-2.00KCCT-ND"
 			(at 184.15 57.15 0)
 			(effects
 				(font
@@ -11779,7 +11855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" "0.25W, 1/4"
+		(property "Power" "0.25W, 1/4W"
 			(at 184.15 57.15 0)
 			(effects
 				(font
@@ -11788,7 +11864,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 184.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW08052K00FKEA"
+			(at 184.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 184.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0805"
 			(at 184.15 57.15 0)
 			(effects
 				(font
@@ -11933,15 +12036,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 237.49 66.04 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "PCE4003CT-ND"
 			(at 237.49 66.04 0)
 			(effects
@@ -12040,7 +12134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "674f538e-9a27-4826-8438-879e10c6c5ee")
-		(property "Reference" "D10"
+		(property "Reference" "D11"
 			(at 187.96 99.0599 90)
 			(effects
 				(font
@@ -12082,15 +12176,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 185.42 100.33 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -12179,7 +12264,7 @@
 		(instances
 			(project ""
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D10")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -12235,15 +12320,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 162.56 43.18 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -12352,7 +12428,7 @@
 				)
 			)
 		)
-		(property "Value" "PC357N4J000F"
+		(property "Value" "PC357N"
 			(at 162.306 129.286 0)
 			(effects
 				(font
@@ -12390,16 +12466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "PC357N4J000F"
-			(at 162.56 124.46 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "1855-1022-1-ND"
 			(at 162.56 124.46 0)
 			(effects
 				(font
@@ -12444,6 +12511,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Name" "PC357N4J000F"
+			(at 162.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SHARP/Socle Technology"
+			(at 162.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "4-SMD, Gull Wing"
+			(at 162.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "c740c334-fb1f-439b-a887-ff51b8181533")
 		)
@@ -12475,7 +12569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f489aeb-6639-42b8-893d-0332580d4411")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR058"
 			(at 154.94 44.45 0)
 			(effects
 				(font
@@ -12525,7 +12619,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR057")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -12651,15 +12745,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 218.44 66.04 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "445-3942-1-ND"
 			(at 218.44 66.04 0)
 			(effects
@@ -12757,7 +12842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79f8b59f-a8c0-4944-ae29-0455a6f1cb92")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR064"
 			(at 190.5 85.09 0)
 			(effects
 				(font
@@ -12807,7 +12892,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR063")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -12938,16 +13023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "PA4065NL"
-			(at 158.75 50.8 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "PA4065NL-ND"
 			(at 158.75 50.8 0)
 			(effects
 				(font
@@ -13040,7 +13116,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "852bda91-9be4-4e8d-bf4b-5a04a87c7b4a")
-		(property "Reference" "C38"
+		(property "Reference" "C39"
 			(at 196.596 105.41 0)
 			(effects
 				(font
@@ -13081,15 +13157,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 199.39 102.87 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -13175,7 +13242,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "C38")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -13191,7 +13258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89bec873-1219-4efb-a35b-ab1069013f12")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR054"
 			(at 139.7 152.4 0)
 			(effects
 				(font
@@ -13241,7 +13308,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR053")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -13296,15 +13363,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 201.93 63.5 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -13409,7 +13467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90a94f91-7404-4dcf-8011-e556ffa7724e")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR055"
 			(at 144.78 152.4 0)
 			(effects
 				(font
@@ -13459,7 +13517,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR054")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -13515,15 +13573,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 147.32 46.99 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -13633,7 +13682,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kΩ/0603"
+		(property "Value" "100kΩ"
 			(at 132.588 133.858 90)
 			(effects
 				(font
@@ -13669,16 +13718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06031K00FKEA"
-			(at 135.89 132.08 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-100KHCT-ND"
 			(at 135.89 132.08 0)
 			(effects
 				(font
@@ -13705,7 +13745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 135.89 132.08 0)
 			(effects
 				(font
@@ -13714,7 +13754,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 135.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW0603100KFKEA"
+			(at 135.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 135.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 135.89 132.08 0)
 			(effects
 				(font
@@ -13733,6 +13800,72 @@
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
 					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 91.44 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0f67989-56ec-4e34-9706-3e8993cbffe6")
+		(property "Reference" "#PWR052"
+			(at 91.44 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PGND"
+			(at 91.44 151.13 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70bc6b57-83ba-44d6-b4f4-1c48a9440d05")
+		)
+		(instances
+			(project "mpair"
+				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -13788,15 +13921,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 139.7 140.97 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -13942,15 +14066,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 220.98 91.44 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 220.98 91.44 90)
 			(effects
@@ -14088,15 +14203,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 152.4 46.99 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -14242,15 +14348,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 144.78 140.97 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 144.78 140.97 90)
 			(effects
@@ -14356,7 +14453,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "63,4kΩ/0603"
+		(property "Value" "63,4kΩ"
 			(at 93.218 136.652 90)
 			(effects
 				(font
@@ -14392,16 +14489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS060363K4FKEA"
-			(at 91.44 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-63.4KHCT-ND"
 			(at 91.44 133.35 0)
 			(effects
 				(font
@@ -14428,7 +14516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 91.44 133.35 0)
 			(effects
 				(font
@@ -14437,7 +14525,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 91.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW060363K4FKEA"
+			(at 91.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 91.44 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 91.44 133.35 0)
 			(effects
 				(font
@@ -14511,15 +14626,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 97.79 63.5 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -14629,7 +14735,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2kΩ/0603"
+		(property "Value" "2kΩ"
 			(at 168.402 93.218 90)
 			(effects
 				(font
@@ -14665,16 +14771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06032K00FKEA"
-			(at 170.18 96.52 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-2.00KHCT-ND"
 			(at 170.18 96.52 0)
 			(effects
 				(font
@@ -14710,7 +14807,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 170.18 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06032K00FKEA"
+			(at 170.18 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 170.18 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 170.18 96.52 0)
 			(effects
 				(font
@@ -14752,7 +14876,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "499Ω/0603"
+		(property "Value" "499Ω"
 			(at 141.478 111.252 90)
 			(effects
 				(font
@@ -14788,16 +14912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS0603499RFKEA"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-499HCT-ND"
 			(at 139.7 107.95 0)
 			(effects
 				(font
@@ -14824,7 +14939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 139.7 107.95 0)
 			(effects
 				(font
@@ -14833,7 +14948,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW0603499RFKEA"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 139.7 107.95 0)
 			(effects
 				(font
@@ -14867,7 +15009,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b450eab9-14d8-4e27-be3c-46adb9aec998")
-		(property "Reference" "D9"
+		(property "Reference" "D10"
 			(at 173.99 58.4199 90)
 			(effects
 				(font
@@ -14926,15 +15068,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -15020,7 +15153,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D9")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -15076,15 +15209,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 104.14 63.5 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -15186,7 +15310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bdfadf02-ca04-4e3a-a150-4b3e506e7762")
-		(property "Reference" "D12"
+		(property "Reference" "D13"
 			(at 187.96 55.88 0)
 			(effects
 				(font
@@ -15225,15 +15349,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 187.96 60.96 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -15319,7 +15434,7 @@
 		(instances
 			(project ""
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D12")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -15335,7 +15450,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3529f4c-3abd-47a9-b79f-a9b5eb737c63")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR062"
 			(at 170.18 133.35 0)
 			(effects
 				(font
@@ -15385,7 +15500,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR061")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -15441,15 +15556,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 177.8 96.52 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -15595,15 +15701,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 177.8 116.84 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1066-1-ND"
 			(at 177.8 116.84 0)
 			(effects
@@ -15709,7 +15806,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4,7Ω/0603"
+		(property "Value" "4,7Ω"
 			(at 137.668 61.468 90)
 			(effects
 				(font
@@ -15745,16 +15842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06034R70FKEA"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-4.70HHCT-ND"
 			(at 140.97 59.69 0)
 			(effects
 				(font
@@ -15781,7 +15869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 140.97 59.69 0)
 			(effects
 				(font
@@ -15790,7 +15878,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06034R70FKEA"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 140.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 140.97 59.69 0)
 			(effects
 				(font
@@ -15824,7 +15939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd876c01-e724-463d-b8cc-3b6b64546517")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR061"
 			(at 166.37 50.8 0)
 			(effects
 				(font
@@ -15874,7 +15989,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR060")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -15898,7 +16013,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "24,9kΩ/0603"
+		(property "Value" "24,9kΩ"
 			(at 154.432 120.142 90)
 			(effects
 				(font
@@ -15934,16 +16049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS060324K9FKEA"
-			(at 151.13 121.92 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-24.9KHCT-ND"
 			(at 151.13 121.92 0)
 			(effects
 				(font
@@ -15970,7 +16076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 151.13 121.92 0)
 			(effects
 				(font
@@ -15979,7 +16085,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 151.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW060324K9FKEA"
+			(at 151.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 151.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 151.13 121.92 0)
 			(effects
 				(font
@@ -16013,7 +16146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da7efdfa-335b-43fe-b3d0-2959871810a4")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR060"
 			(at 157.48 71.12 0)
 			(effects
 				(font
@@ -16063,7 +16196,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR059")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -16185,15 +16318,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 138.43 83.82 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -16340,15 +16464,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 137.16 46.99 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "PCE3820CT-ND"
 			(at 137.16 46.99 0)
 			(effects
@@ -16486,15 +16601,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 124.46 55.88 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -16640,15 +16746,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 162.56 38.1 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "399-C1812C102KGRACTUCT-ND"
 			(at 162.56 38.1 0)
 			(effects
@@ -16737,6 +16834,148 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 91.44 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dde60788-a25c-4c0f-957a-1c122d89b5b1")
+		(property "Reference" "D6"
+			(at 93.98 141.6049 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMBJ58CA"
+			(at 93.98 143.51 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 91.44 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "SMBJ58CA-FDICT-ND"
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rated_Voltage" ""
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature_Coefficient" ""
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "SMBJ58CA-13-F"
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Diodes Incorporated"
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "DO-214AA, SMB"
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" ""
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 91.44 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46023c63-0398-4d8d-b7b0-b44bacb6660d")
+		)
+		(pin "2"
+			(uuid "0097fabc-3fa6-4570-833e-5e0247d02399")
+		)
+		(instances
+			(project "mpair"
+				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Small")
 		(at 153.67 83.82 270)
 		(unit 1)
@@ -16746,7 +16985,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dde9f20a-035a-437d-9b0f-992b4901ae9a")
-		(property "Reference" "D8"
+		(property "Reference" "D9"
 			(at 156.21 82.5499 90)
 			(effects
 				(font
@@ -16805,15 +17044,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -16899,7 +17129,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D8")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -16915,7 +17145,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfce2aae-de30-4f9f-91a6-042a6bc11e00")
-		(property "Reference" "D13"
+		(property "Reference" "D14"
 			(at 201.93 50.8 0)
 			(effects
 				(font
@@ -16972,15 +17202,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 201.93 57.15 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -17066,7 +17287,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D13")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -17081,7 +17302,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e215870e-60b0-4049-8936-80a79820c70f")
-		(property "Reference" "C39"
+		(property "Reference" "C38"
 			(at 196.85 73.66 90)
 			(effects
 				(font
@@ -17122,15 +17343,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 198.12 72.39 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -17216,7 +17428,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "C39")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -17273,15 +17485,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 180.34 60.96 0)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -17386,7 +17589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e743d728-cb58-4179-b795-462204b6d43a")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR063"
 			(at 185.42 130.81 0)
 			(effects
 				(font
@@ -17436,7 +17639,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR062")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -17451,7 +17654,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e94502a1-d3f0-46b1-87e4-731ddbc5611e")
-		(property "Reference" "R54"
+		(property "Reference" "R51"
 			(at 195.326 69.85 0)
 			(effects
 				(font
@@ -17469,7 +17672,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 198.12 67.31 0)
 			(effects
 				(font
@@ -17496,16 +17699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06032K00FKEA"
-			(at 198.12 67.31 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-2.00KCCT-ND"
 			(at 198.12 67.31 0)
 			(effects
 				(font
@@ -17532,7 +17726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" "0.25W, 1/4"
+		(property "Power" "0.25W, 1/4W"
 			(at 198.12 67.31 0)
 			(effects
 				(font
@@ -17541,7 +17735,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 198.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW08052K00FKEA"
+			(at 198.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 198.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0805"
 			(at 198.12 67.31 0)
 			(effects
 				(font
@@ -17559,7 +17780,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "R54")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -17583,7 +17804,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2,49kΩ/0603"
+		(property "Value" "2,49kΩ"
 			(at 137.668 65.278 90)
 			(effects
 				(font
@@ -17619,16 +17840,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06032K49FKEA"
-			(at 140.97 63.5 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-2.49KHCT-ND"
 			(at 140.97 63.5 0)
 			(effects
 				(font
@@ -17655,7 +17867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 140.97 63.5 0)
 			(effects
 				(font
@@ -17664,7 +17876,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06032K49FKEA"
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 140.97 63.5 0)
 			(effects
 				(font
@@ -17737,15 +17976,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 146.05 80.01 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -17838,7 +18068,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9e52d43-3969-48e4-8a08-91cc3552e4d3")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR053"
 			(at 118.11 73.66 0)
 			(effects
 				(font
@@ -17888,7 +18118,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "#PWR052")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -17912,7 +18142,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4,64kΩ/0603"
+		(property "Value" "4,64kΩ"
 			(at 77.978 126.492 90)
 			(effects
 				(font
@@ -17948,16 +18178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06034K64FKEA"
-			(at 76.2 123.19 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-4.64KHCT-ND"
 			(at 76.2 123.19 0)
 			(effects
 				(font
@@ -17984,7 +18205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 76.2 123.19 0)
 			(effects
 				(font
@@ -17993,7 +18214,34 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 76.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06034K64FKEA"
+			(at 76.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 76.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
 			(at 76.2 123.19 0)
 			(effects
 				(font

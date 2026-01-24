@@ -5271,16 +5271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "EXB-V8V3R3JV"
-			(at 125.73 85.09 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "Y43R3CT-ND"
 			(at 125.73 85.09 90)
 			(effects
 				(font
@@ -5307,7 +5298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "62.5mW"
 			(at 125.73 85.09 90)
 			(effects
 				(font
@@ -5316,7 +5307,70 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "5%"
+			(at 125.73 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "EXB-V8V3R3JV"
+			(at 125.73 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Panasonic Electronic Components"
+			(at 125.73 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "1206"
+			(at 125.73 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 125.73 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 125.73 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 125.73 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 125.73 85.09 90)
 			(effects
 				(font
@@ -5544,15 +5598,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 142.24 52.07 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 142.24 52.07 90)
 			(effects
@@ -5617,6 +5662,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 142.24 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 142.24 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 142.24 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 142.24 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 142.24 52.07 90)
 			(effects
 				(font
@@ -5760,15 +5841,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 140.97 134.62 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1009-1-ND"
 			(at 140.97 134.62 90)
 			(effects
@@ -5833,6 +5905,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 140.97 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 140.97 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 140.97 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 140.97 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 140.97 134.62 90)
 			(effects
 				(font
@@ -6107,15 +6215,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 88.9 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 181.61 88.9 90)
 			(effects
@@ -6180,6 +6279,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 181.61 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 88.9 90)
 			(effects
 				(font
@@ -6255,15 +6390,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 138.43 74.93 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "478-GG0603052R542PCT-ND"
 			(at 138.43 74.93 0)
 			(effects
@@ -6328,6 +6454,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 138.43 74.93 0)
 			(effects
 				(font
@@ -6405,15 +6567,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 114.3 134.62 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 114.3 134.62 90)
 			(effects
@@ -6478,6 +6631,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 114.3 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 114.3 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 114.3 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 114.3 134.62 90)
 			(effects
 				(font
@@ -6555,15 +6744,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 160.02 137.16 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 160.02 137.16 90)
 			(effects
@@ -6628,6 +6808,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 160.02 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 160.02 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 160.02 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 160.02 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 160.02 137.16 90)
 			(effects
 				(font
@@ -6771,15 +6987,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 123.19 52.07 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 123.19 52.07 90)
 			(effects
@@ -6852,6 +7059,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 123.19 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 123.19 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 123.19 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 123.19 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f06b794-202d-42b0-ad52-d587f68bd458")
 		)
@@ -6885,7 +7128,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33Ω/0603"
+		(property "Value" "33Ω"
 			(at 189.738 85.09 90)
 			(effects
 				(font
@@ -6921,16 +7164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS060333R0FKEA"
-			(at 181.61 83.82 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-33.0HCT-ND"
 			(at 181.61 83.82 90)
 			(effects
 				(font
@@ -6957,7 +7191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 181.61 83.82 90)
 			(effects
 				(font
@@ -6966,7 +7200,70 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 181.61 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW060333R0FKEA"
+			(at 181.61 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 181.61 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
+			(at 181.61 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 83.82 90)
 			(effects
 				(font
@@ -7109,16 +7406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "ECS-2520MV-250-BN-TR"
-			(at 190.5 113.03 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "XC2752CT-ND"
 			(at 190.5 113.03 0)
 			(effects
 				(font
@@ -7155,6 +7443,69 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 190.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "ECS-2520MV-250-CN-TR"
+			(at 190.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ECS Inc."
+			(at 190.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "4-SMD, No Lead"
+			(at 190.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 190.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 190.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 190.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 190.5 113.03 0)
 			(effects
 				(font
@@ -7238,15 +7589,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 148.59 52.07 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 148.59 52.07 90)
 			(effects
@@ -7319,6 +7661,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 148.59 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 148.59 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 148.59 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 148.59 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "67493f30-3b94-4c49-8a5e-9ec571bee969")
 		)
@@ -7352,7 +7730,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESDS314DBVR"
+		(property "Value" "ESDS314"
 			(at 96.266 54.102 0)
 			(effects
 				(font
@@ -7361,7 +7739,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MarPi82:DBV0005A_N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 88.9 55.88 0)
 			(effects
 				(font
@@ -7390,16 +7768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "ESDS314DBVR"
-			(at 88.9 55.88 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "296-ESDS314DBVRCT-ND"
 			(at 88.9 55.88 90)
 			(effects
 				(font
@@ -7436,6 +7805,69 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 88.9 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "ESDS314DBVR"
+			(at 88.9 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Texas Instruments"
+			(at 88.9 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "SOT-23-5"
+			(at 88.9 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 88.9 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 88.9 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 88.9 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 88.9 55.88 90)
 			(effects
 				(font
@@ -7652,15 +8084,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 160.02 68.58 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "587-3812-1-ND"
 			(at 160.02 68.58 90)
 			(effects
@@ -7716,6 +8139,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 160.02 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 160.02 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 160.02 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 160.02 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 160.02 68.58 90)
 			(effects
 				(font
@@ -7793,15 +8252,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 96.52 134.62 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-3392-1-ND"
 			(at 96.52 134.62 90)
 			(effects
@@ -7866,6 +8316,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 96.52 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 96.52 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 96.52 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 96.52 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 96.52 134.62 90)
 			(effects
 				(font
@@ -7943,15 +8429,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 81.28 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 181.61 81.28 90)
 			(effects
@@ -8016,6 +8493,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 181.61 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 81.28 90)
 			(effects
 				(font
@@ -8093,15 +8606,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 134.62 134.62 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-2970-1-ND"
 			(at 134.62 134.62 90)
 			(effects
@@ -8166,6 +8670,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 134.62 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 134.62 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 134.62 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 134.62 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 134.62 134.62 90)
 			(effects
 				(font
@@ -8243,15 +8783,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 101.6 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-1.00KHCT-ND"
 			(at 181.61 101.6 90)
 			(effects
@@ -8316,6 +8847,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 181.61 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 101.6 90)
 			(effects
 				(font
@@ -8393,15 +8960,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 110.49 85.09 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "478-KAM15AR72A682KTCT-ND"
 			(at 110.49 85.09 90)
 			(effects
@@ -8466,6 +9024,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 110.49 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 110.49 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 110.49 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 110.49 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 110.49 85.09 90)
 			(effects
 				(font
@@ -8543,15 +9137,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 120.65 96.52 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-49.9HCT-ND"
 			(at 120.65 96.52 0)
 			(effects
@@ -8624,6 +9209,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 120.65 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 120.65 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 120.65 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 120.65 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "65208521-542b-444f-8dff-716902d5175f")
 		)
@@ -8657,7 +9278,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330Ω/0603"
+		(property "Value" "330Ω"
 			(at 141.732 113.284 90)
 			(effects
 				(font
@@ -8693,16 +9314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS0603330RFKEA"
-			(at 138.43 111.76 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-330HCT-ND"
 			(at 138.43 111.76 90)
 			(effects
 				(font
@@ -8729,7 +9341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 138.43 111.76 90)
 			(effects
 				(font
@@ -8738,7 +9350,70 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 138.43 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW0603330RFKEA"
+			(at 138.43 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 138.43 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
+			(at 138.43 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 138.43 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 138.43 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 138.43 111.76 90)
 			(effects
 				(font
@@ -8780,7 +9455,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330Ω/0603"
+		(property "Value" "330Ω"
 			(at 141.732 118.364 90)
 			(effects
 				(font
@@ -8816,16 +9491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS0603330RFKEA"
-			(at 138.43 116.84 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-330HCT-ND"
 			(at 138.43 116.84 90)
 			(effects
 				(font
@@ -8852,7 +9518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 138.43 116.84 90)
 			(effects
 				(font
@@ -8861,7 +9527,70 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 138.43 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW0603330RFKEA"
+			(at 138.43 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 138.43 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
+			(at 138.43 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 138.43 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 138.43 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 138.43 116.84 90)
 			(effects
 				(font
@@ -8939,15 +9668,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 129.54 52.07 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 129.54 52.07 90)
 			(effects
@@ -9012,6 +9732,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 129.54 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 129.54 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 129.54 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 129.54 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 129.54 52.07 90)
 			(effects
 				(font
@@ -9155,15 +9911,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 116.84 52.07 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 116.84 52.07 90)
 			(effects
@@ -9228,6 +9975,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 116.84 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 116.84 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 116.84 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 116.84 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 116.84 52.07 90)
 			(effects
 				(font
@@ -9305,15 +10088,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 78.74 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 181.61 78.74 90)
 			(effects
@@ -9378,6 +10152,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 181.61 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 78.74 90)
 			(effects
 				(font
@@ -9521,15 +10331,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 91.44 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 181.61 91.44 90)
 			(effects
@@ -9594,6 +10395,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 181.61 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 91.44 90)
 			(effects
 				(font
@@ -9803,15 +10640,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 105.41 72.39 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-10.0HCT-ND"
 			(at 105.41 72.39 0)
 			(effects
@@ -9876,6 +10704,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 105.41 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 105.41 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 105.41 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 105.41 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 105.41 72.39 0)
 			(effects
 				(font
@@ -9953,15 +10817,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 115.57 104.14 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1009-1-ND"
 			(at 115.57 104.14 90)
 			(effects
@@ -10026,6 +10881,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 115.57 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 115.57 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 115.57 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 115.57 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 115.57 104.14 90)
 			(effects
 				(font
@@ -10101,15 +10992,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 105.41 129.54 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "490-1053-1-ND"
 			(at 105.41 129.54 90)
 			(effects
@@ -10165,6 +11047,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 105.41 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 105.41 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 105.41 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 105.41 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 105.41 129.54 90)
 			(effects
 				(font
@@ -10374,15 +11292,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 99.06 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-1.00KHCT-ND"
 			(at 181.61 99.06 90)
 			(effects
@@ -10455,6 +11364,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 181.61 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 181.61 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6203599a-ea1e-40c3-8e67-1bef5ace1b74")
 		)
@@ -10488,7 +11433,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12,4kΩ/0603"
+		(property "Value" "12,4kΩ"
 			(at 130.048 131.572 90)
 			(effects
 				(font
@@ -10524,16 +11469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS060312K4FKEA"
-			(at 128.27 134.62 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-12.4KHCT-ND"
 			(at 128.27 134.62 90)
 			(effects
 				(font
@@ -10560,7 +11496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.125W, 1/8W"
 			(at 128.27 134.62 90)
 			(effects
 				(font
@@ -10569,7 +11505,70 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 128.27 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW060312K4FKEA"
+			(at 128.27 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 128.27 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0603"
+			(at 128.27 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 128.27 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 128.27 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 128.27 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 128.27 134.62 90)
 			(effects
 				(font
@@ -10647,15 +11646,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 86.36 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 181.61 86.36 90)
 			(effects
@@ -10720,6 +11710,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 181.61 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 86.36 90)
 			(effects
 				(font
@@ -10797,15 +11823,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 181.61 96.52 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-1.00KHCT-ND"
 			(at 181.61 96.52 90)
 			(effects
@@ -10870,6 +11887,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 181.61 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 181.61 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 181.61 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 181.61 96.52 90)
 			(effects
 				(font
@@ -10948,16 +12001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "W5500"
-			(at 160.02 104.14 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "1278-W5500CT-ND"
 			(at 160.02 104.14 0)
 			(effects
 				(font
@@ -10994,6 +12038,69 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "W5500"
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "WIZnet"
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "48-LQFP"
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 160.02 104.14 0)
 			(effects
 				(font
@@ -11275,15 +12382,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 115.57 72.39 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-49.9HCT-ND"
 			(at 115.57 72.39 0)
 			(effects
@@ -11348,6 +12446,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 115.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 115.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 115.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 115.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 115.57 72.39 0)
 			(effects
 				(font
@@ -11425,15 +12559,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 201.93 119.38 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 201.93 119.38 90)
 			(effects
@@ -11498,6 +12623,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 201.93 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 201.93 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 201.93 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 201.93 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 201.93 119.38 90)
 			(effects
 				(font
@@ -11706,15 +12867,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 138.43 92.71 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "478-GG0603052R542PCT-ND"
 			(at 138.43 92.71 0)
 			(effects
@@ -11779,6 +12931,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 138.43 92.71 0)
 			(effects
 				(font
@@ -11922,15 +13110,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 135.89 52.07 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1276-1018-1-ND"
 			(at 135.89 52.07 90)
 			(effects
@@ -11995,6 +13174,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 135.89 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 135.89 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 135.89 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 135.89 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 135.89 52.07 90)
 			(effects
 				(font
@@ -12072,15 +13287,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 205.74 107.95 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-1.00KHCT-ND"
 			(at 205.74 107.95 90)
 			(effects
@@ -12145,6 +13351,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 205.74 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 205.74 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 205.74 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 205.74 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 205.74 107.95 90)
 			(effects
 				(font
@@ -12222,15 +13464,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 110.49 90.17 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "478-KAM15AR72A682KTCT-ND"
 			(at 110.49 90.17 90)
 			(effects
@@ -12295,6 +13528,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 110.49 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 110.49 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 110.49 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 110.49 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 110.49 90.17 90)
 			(effects
 				(font
@@ -12372,15 +13641,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 105.41 104.14 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "490-4782-1-ND"
 			(at 105.41 104.14 90)
 			(effects
@@ -12445,6 +13705,42 @@
 			)
 		)
 		(property "Tolerance" ""
+			(at 105.41 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 105.41 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 105.41 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 105.41 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 105.41 104.14 90)
 			(effects
 				(font
@@ -12588,15 +13884,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 115.57 96.52 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-49.9HCT-ND"
 			(at 115.57 96.52 0)
 			(effects
@@ -12661,6 +13948,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 115.57 96.52 0)
 			(effects
 				(font
@@ -12738,15 +14061,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 120.65 72.39 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-49.9HCT-ND"
 			(at 120.65 72.39 0)
 			(effects
@@ -12811,6 +14125,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 120.65 72.39 0)
 			(effects
 				(font
@@ -12888,15 +14238,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 99.06 123.19 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "541-0.0GCT-ND"
 			(at 99.06 123.19 90)
 			(effects
@@ -12961,6 +14302,42 @@
 			)
 		)
 		(property "PACKAGE" "0603"
+			(at 99.06 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 99.06 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 99.06 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 99.06 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 99.06 123.19 90)
 			(effects
 				(font

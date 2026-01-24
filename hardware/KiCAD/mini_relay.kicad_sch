@@ -1405,15 +1405,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 152.4 86.36 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "Z2657CT-ND"
 			(at 152.4 86.36 0)
 			(effects
@@ -1477,6 +1468,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "b383568b-8550-4ff6-97f2-443f0f6e326e")
 		)
@@ -1520,7 +1547,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a17f442c-da0b-4fb1-918c-3bb7bea93543")
-		(property "Reference" "D15"
+		(property "Reference" "D16"
 			(at 127 86.3599 90)
 			(effects
 				(font
@@ -1579,15 +1606,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part name" ""
-			(at 124.46 87.63 90)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 				(hide yes)
 			)
@@ -1664,6 +1682,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 124.46 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 124.46 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 124.46 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 124.46 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3dec38dc-5a30-419d-902d-5e85e1c0a7bd")
 		)
@@ -1673,7 +1727,7 @@
 		(instances
 			(project ""
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/5c895c17-692e-46ff-ba12-a526f1167785"
-					(reference "D15")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -1697,7 +1751,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4,7kΩ/0603"
+		(property "Value" "4,7kΩ"
 			(at 135.382 103.632 90)
 			(effects
 				(font
@@ -1733,16 +1787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" "RCS06034K70FKEA"
-			(at 132.08 105.41 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" ""
+		(property "DigiKey_Part_Number" "541-4.70KHCT-ND"
 			(at 132.08 105.41 90)
 			(effects
 				(font
@@ -1769,7 +1814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power" ""
+		(property "Power" "0.25W, 1/4W"
 			(at 132.08 105.41 90)
 			(effects
 				(font
@@ -1778,7 +1823,70 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "1%"
+			(at 132.08 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CRCW06034K70FKEA"
+			(at 132.08 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Vishay Dale"
+			(at 132.08 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "0805"
+			(at 132.08 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 132.08 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 132.08 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 132.08 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
 			(at 132.08 105.41 90)
 			(effects
 				(font
@@ -1860,15 +1968,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part name" ""
-			(at 139.7 105.41 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
 		(property "DigiKey_Part_Number" "1801-MMBT3904HRFGCT-ND"
 			(at 139.7 105.41 0)
 			(effects
@@ -1941,6 +2040,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 139.7 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_FARNELL" ""
+			(at 139.7 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "OC_NEWARK" ""
+			(at 139.7 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 139.7 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7b8ce626-b95a-469b-b58e-e5885d83a722")
 		)
@@ -1968,7 +2103,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e922108e-f490-4820-ae92-2e3aa8bcd6de")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR092"
 			(at 124.46 102.87 0)
 			(effects
 				(font
@@ -2018,7 +2153,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/5c895c17-692e-46ff-ba12-a526f1167785"
-					(reference "#PWR091")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -2033,7 +2168,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f7b98d43-f4c2-4bb9-9ff3-9fa22e7046bd")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR093"
 			(at 142.24 123.19 0)
 			(effects
 				(font
@@ -2083,7 +2218,7 @@
 		(instances
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/5c895c17-692e-46ff-ba12-a526f1167785"
-					(reference "#PWR092")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)

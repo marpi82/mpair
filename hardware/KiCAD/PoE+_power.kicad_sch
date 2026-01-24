@@ -7228,6 +7228,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MarPi82:FDMC_2523P"
@@ -7373,6 +7374,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
@@ -7519,6 +7521,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -7660,6 +7663,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -7800,6 +7804,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm"
@@ -7949,6 +7954,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP2.85x4mm"
@@ -8190,6 +8196,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MarPi82:FDS_86242"
@@ -8334,6 +8341,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -8400,6 +8408,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -8541,6 +8550,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -8683,6 +8693,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
@@ -8842,6 +8853,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -8983,6 +8995,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -9049,6 +9062,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
@@ -9190,6 +9204,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -9332,6 +9347,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMB"
@@ -9473,6 +9489,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -9613,6 +9630,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MarPi82:CSD19534Q"
@@ -9758,6 +9776,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
@@ -9900,6 +9919,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
@@ -10059,6 +10079,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -10200,6 +10221,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -10341,6 +10363,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
@@ -10482,6 +10505,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -10621,6 +10645,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MarPi82:SRF3225TAC_BRN"
@@ -10761,6 +10786,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -10901,6 +10927,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Bourns-SRU8028_8.0x8.0mm"
@@ -11033,6 +11060,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -11174,6 +11202,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -11314,6 +11343,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MarPi82:L_Bourns_SRR1280"
@@ -11447,6 +11477,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
@@ -11589,6 +11620,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MarPi82:CSD19534Q"
@@ -11733,6 +11765,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -11799,6 +11832,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -11940,6 +11974,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -12007,6 +12042,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
@@ -12150,6 +12186,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
@@ -12295,6 +12332,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
@@ -12434,6 +12472,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-4_4.55x3.7mm_P2.54mm"
@@ -12584,6 +12623,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -12650,6 +12690,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -12716,6 +12757,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
@@ -12857,6 +12899,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -12922,6 +12965,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MarPi82:PA4065NL"
@@ -13132,6 +13176,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -13273,6 +13318,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13338,6 +13384,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
@@ -13482,6 +13529,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13548,6 +13596,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
@@ -13689,6 +13738,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -13830,6 +13880,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13896,6 +13947,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -14037,6 +14089,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -14178,6 +14231,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
@@ -14319,6 +14373,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -14460,6 +14515,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -14601,6 +14657,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -14742,6 +14799,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -14883,6 +14941,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -15025,6 +15084,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
@@ -15184,6 +15244,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -15324,6 +15385,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
@@ -15465,6 +15527,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15531,6 +15594,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -15672,6 +15736,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -15813,6 +15878,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -15954,6 +16020,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -16020,6 +16087,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -16161,6 +16229,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -16227,6 +16296,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -16293,6 +16363,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
@@ -16435,6 +16506,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_8x6.2"
@@ -16576,6 +16648,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
@@ -16717,6 +16790,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
@@ -16859,6 +16933,7 @@
 					(size 0.762 0.762)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMB"
@@ -17001,6 +17076,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
@@ -17159,6 +17235,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
@@ -17318,6 +17395,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -17460,6 +17538,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
@@ -17604,6 +17683,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -17670,6 +17750,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
@@ -17811,6 +17892,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -17951,6 +18033,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_TDK_SLF10145"
@@ -18083,6 +18166,7 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -18149,6 +18233,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"

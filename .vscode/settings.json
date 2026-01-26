@@ -54,5 +54,6 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.tabSize": 4
-    }
+    },
+    "cmake.sourceDirectory": "/home/marpi82/Dokumenty/GitHub/mpair/software/firmware-c6"
 }

@@ -67,6 +67,7 @@ Funkcje Oprogramowania
   * Publikowanie danych do Luftdaten (sensor.community)
   * Publikowanie danych do madavi.de
   * Publikowanie danych do opensensemap.org
+  * Publikowanie danych do aqi.eco
 
 Specyfikacja Techniczna
 ========================

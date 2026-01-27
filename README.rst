@@ -67,6 +67,7 @@ Software Features
   * Data publishing to Luftdaten (sensor.community)
   * Data publishing to madavi.de
   * Data publishing to opensensemap.org
+  * Data publishing to aqi.eco
 
 Technical Specifications
 ========================

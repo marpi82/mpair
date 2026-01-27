@@ -114,7 +114,7 @@ See `.vscode/` directory for configuration.
 - `matter_device/` - Matter air quality sensor implementation
 - `web_server/` - Configuration web interface
 - `prometheus/` - Metrics exporter
-- `publishers/` - Luftdaten, madavi, opensensemap
+- `publishers/` - Luftdaten, madavi, opensensemap, aqi.eco
 
 ## License
 

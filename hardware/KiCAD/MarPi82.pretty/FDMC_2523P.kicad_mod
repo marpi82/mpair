@@ -8,7 +8,7 @@
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "1d015ef1-97b3-4181-b293-a4fa9de78caf")
+		(uuid "313075d0-d98e-477e-91a1-d9441da90eaf")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "b81b65a9-5ca6-4288-9bfd-bf688df22876")
+		(uuid "b35d7416-fb25-4460-a894-520e913dc44f")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f7195f84-3ca7-4dee-a9b5-067e03a0ced1")
+		(uuid "d7dd1158-1eb7-468c-a40b-7ed82722d684")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +44,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2c48fbc3-8629-4c30-b4c4-646ecf652fb7")
+		(uuid "9309fc26-5ed9-490e-aa24-d7c8da2143fd")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,18 +53,6 @@
 		)
 	)
 	(attr smd)
-	(fp_poly
-		(pts
-			(xy 1.3208 -1.1557) (xy -0.381 -1.1557) (xy -0.381 1.1557) (xy 1.3208 1.1557)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "b4cadae7-f444-4d03-9841-6278edad4316")
-	)
 	(fp_poly
 		(pts
 			(xy 1.3208 -1.1557) (xy -0.381 -1.1557) (xy -0.381 1.1557) (xy 1.3208 1.1557)
@@ -342,6 +330,18 @@
 				(thickness 0.15)
 			)
 		)
+	)
+	(pad "D" smd custom
+		(at 0.47 0)
+		(size 1.7018 2.3114)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives)
+		(uuid "54c16a4b-61db-4f80-a2d0-f7b573025611")
 	)
 	(pad "D" smd rect
 		(at 1.5494 -0.974999)

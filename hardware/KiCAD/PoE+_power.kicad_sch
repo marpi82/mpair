@@ -313,176 +313,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at -1.27 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "D_Small"
-				(at -3.81 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Small_0_1"
-				(polyline
-					(pts
-						(xy -0.762 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Small_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.778)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.778)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:D_Zener_Small"
 			(pin_numbers
 				(hide yes)
@@ -2614,6 +2444,389 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MarPi82:MMBD4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MMBD4148"
+				(at -3.81 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SC-59"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MMBD4148_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MMBD4148_1_1"
+				(pin no_connect line
+					(at -2.54 1.27 0)
+					(length 1.778)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MarPi82:MMBD4148CC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MMBD4148CC"
+				(at -3.81 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SC-59"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MMBD4148CC_0_1"
+				(polyline
+					(pts
+						(xy -2.032 1.016) (xy -0.508 0) (xy -2.032 -1.016) (xy -2.032 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 1.016) (xy -0.508 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0) (xy 0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.016) (xy 0.508 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.016) (xy 0.508 0) (xy 2.032 1.016) (xy 2.032 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MMBD4148CC_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.778)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.778)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MarPi82:PA4065NL"
 			(pin_numbers
 				(hide yes)
@@ -4436,12 +4649,6 @@
 		(uuid "37b7e684-3b92-42aa-90e4-af9e3b6dbc32")
 	)
 	(junction
-		(at 153.67 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "397460a0-705c-47c5-9ed3-a41080ae3066")
-	)
-	(junction
 		(at 218.44 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5617,6 +5824,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 83.82) (xy 153.67 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55165b06-4699-41b2-ab47-46cc2573b06f")
+	)
+	(wire
+		(pts
 			(xy 224.79 68.58) (xy 224.79 78.74)
 		)
 		(stroke
@@ -5967,16 +6184,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 80.01) (xy 153.67 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "838c31a1-ed7a-4162-a9ce-adceecc70a5f")
-	)
-	(wire
-		(pts
 			(xy 171.45 62.23) (xy 171.45 67.31)
 		)
 		(stroke
@@ -6194,16 +6401,6 @@
 			(type default)
 		)
 		(uuid "9f1ed49d-ec0d-4621-a47d-3f9f87889fb1")
-	)
-	(wire
-		(pts
-			(xy 153.67 78.74) (xy 153.67 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f28c255-a700-435b-bf85-a02bde39fb08")
 	)
 	(wire
 		(pts
@@ -6507,7 +6704,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 73.66) (xy 153.67 58.42)
+			(xy 153.67 58.42) (xy 153.67 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6617,16 +6814,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 81.28) (xy 153.67 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8ebd4bd-3308-4af9-bb93-556f8bbaa8c2")
-	)
-	(wire
-		(pts
 			(xy 129.54 90.17) (xy 139.7 90.17)
 		)
 		(stroke
@@ -6634,16 +6821,6 @@
 			(type default)
 		)
 		(uuid "c9f1f16e-e453-4681-957e-e540c669e821")
-	)
-	(wire
-		(pts
-			(xy 153.67 86.36) (xy 153.67 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb2a6b47-961f-42e0-8bc6-3b79d3950c88")
 	)
 	(wire
 		(pts
@@ -6794,6 +6971,16 @@
 			(type default)
 		)
 		(uuid "d8406a1a-f8b5-4397-beaa-cb8f8062f6c0")
+	)
+	(wire
+		(pts
+			(xy 149.86 80.01) (xy 151.13 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d98515ae-2935-46c8-96af-974f5ccef90c")
 	)
 	(wire
 		(pts
@@ -7095,6 +7282,56 @@
 		)
 		(uuid "ffadeaab-6eea-47f6-8a5d-a352e348aa6f")
 	)
+	(label "V-"
+		(at 187.96 50.8 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "3964b493-1572-4983-bcd3-80c7aafbf3b5")
+	)
+	(label "GATE2"
+		(at 102.87 87.63 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e91a20d-5e99-4a45-a7c5-c6d13f059a0a")
+	)
+	(label "Q2D"
+		(at 120.65 55.88 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "50bd3472-ebd5-4e8d-9c74-0339018a6642")
+	)
+	(label "T2P"
+		(at 152.4 127 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "7106c1bf-6a3d-4904-a76e-03e9196474ab")
+	)
+	(label "VC"
+		(at 143.51 121.92 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "835b368b-de50-4a8d-b1a9-39c7ead587dc")
+	)
 	(label "VSS"
 		(at 67.31 139.7 0)
 		(effects
@@ -7115,6 +7352,36 @@
 		)
 		(uuid "980e3474-2c79-4a63-ac5f-7d784a5fd9a9")
 	)
+	(label "CTL"
+		(at 144.78 104.14 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "cb41a254-3ac4-495c-82d5-1dfb1e148937")
+	)
+	(label "V+"
+		(at 187.96 53.34 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "d54beb65-b1f2-4b5a-9dca-7a047ff31457")
+	)
+	(label "Q3D"
+		(at 132.08 55.88 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8b22122-da4c-40fb-a43a-cb68bd310dac")
+	)
 	(label "VDD"
 		(at 67.31 99.06 0)
 		(effects
@@ -7124,6 +7391,16 @@
 			(justify left bottom)
 		)
 		(uuid "f5d32d57-81b2-4714-97d4-6fae3796c622")
+	)
+	(label "VB"
+		(at 144.78 116.84 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "f89f57bf-55e8-4134-8c42-84047145ea1a")
 	)
 	(hierarchical_label "T2Pb"
 		(shape output)
@@ -8658,166 +8935,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 110.49 63.5 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c1d0113-9fa9-4949-af7b-40d80b1b8c6c")
-		(property "Reference" "D7"
-			(at 113.03 62.2299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "MMBD4148"
-			(at 113.03 64.7699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD4148T1-D.PDF"
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 200mA Switching Diode, SOD-123"
-			(at 110.49 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 110.49 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 110.49 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rated_Voltage" ""
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature_Coefficient" ""
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MMBD4148 RFG"
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 110.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d5ddab46-1637-4d4d-b8d5-f062ffd749ee")
-		)
-		(pin "2"
-			(uuid "e348d4bd-634f-4db0-96e7-5b2069eec025")
-		)
-		(instances
-			(project "mpair"
-				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 86.36 123.19 0)
 		(unit 1)
@@ -9160,6 +9277,133 @@
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
 					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MarPi82:MMBD4148CC")
+		(at 153.67 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28aa6e12-a165-4159-9717-8b31b03ec183")
+		(property "Reference" "D8"
+			(at 156.21 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MMBD4148CC"
+			(at 156.21 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
+			(at 153.67 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "5399-MMBD4148CCCT-ND"
+			(at 153.67 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "MMBD4148CC"
+			(at 153.67 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Shenzhen Slkormicro Semicon Co., Ltd."
+			(at 153.67 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
+			(at 153.67 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31bcfae7-35b2-4a42-89f4-84ec0932b2f0")
+		)
+		(pin "3"
+			(uuid "ae24bd2a-116e-4fa2-911c-7ddf74a06fa6")
+		)
+		(pin "2"
+			(uuid "dff60eff-9a89-4a04-adcb-4cc25426d063")
+		)
+		(instances
+			(project ""
+				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -9875,166 +10119,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 153.67 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33044289-173f-4891-af98-64761fff725b")
-		(property "Reference" "D8"
-			(at 156.21 74.9299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "MMBD4148"
-			(at 156.21 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD4148T1-D.PDF"
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 200mA Switching Diode, SOD-123"
-			(at 153.67 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 153.67 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 153.67 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rated_Voltage" ""
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature_Coefficient" ""
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MMBD4148 RFG"
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 153.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d9f666fd-3cf6-477f-a5fc-d89e90c02483")
-		)
-		(pin "2"
-			(uuid "e4f73439-26ca-44f1-b241-dc29614484a0")
-		)
-		(instances
-			(project ""
-				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 149.86 110.49 0)
 		(unit 1)
@@ -10452,6 +10536,133 @@
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
 					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MarPi82:MMBD4148")
+		(at 171.45 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42694f77-751f-42ae-bcec-e286da689603")
+		(property "Reference" "D10"
+			(at 173.99 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBD4148"
+			(at 173.99 60.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
+			(at 171.45 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 171.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 171.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 171.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
+			(at 171.45 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "MMBD4148"
+			(at 171.45 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
+			(at 171.45 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
+			(at 171.45 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7616a3f9-d769-4da4-83ee-eb7c76629c4b")
+		)
+		(pin "2"
+			(uuid "e4fc07b2-2310-4ed9-bbaf-abc672ae76a7")
+		)
+		(pin "3"
+			(uuid "cca102b8-878d-499e-b36c-bd653cd9bb19")
+		)
+		(instances
+			(project "mpair"
+				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -11769,6 +11980,133 @@
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
 					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MarPi82:MMBD4148")
+		(at 110.49 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5eb39770-db77-4769-8811-7a18da604467")
+		(property "Reference" "D7"
+			(at 113.03 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MMBD4148"
+			(at 113.03 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
+			(at 110.49 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 110.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 110.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
+			(at 110.49 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "MMBD4148"
+			(at 110.49 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
+			(at 110.49 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
+			(at 110.49 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c637e3d9-6f8a-42ec-87c1-dd19e0788926")
+		)
+		(pin "2"
+			(uuid "b2f296c9-7fa5-442c-bde4-5b0fb6a57d5a")
+		)
+		(pin "3"
+			(uuid "fd388f97-d30a-4ca4-98b0-d7c0cd012091")
+		)
+		(instances
+			(project ""
+				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -13322,10 +13660,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8d052480-0a97-4ad7-a739-47bf6b33be54")
 		(property "Reference" "Q6"
-			(at 201.93 54.61 90)
+			(at 205.994 64.262 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13333,7 +13670,7 @@
 			)
 		)
 		(property "Value" "FCX493"
-			(at 201.93 57.15 90)
+			(at 206.248 66.294 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14994,166 +15331,6 @@
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
 					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 171.45 59.69 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b450eab9-14d8-4e27-be3c-46adb9aec998")
-		(property "Reference" "D10"
-			(at 173.99 58.4199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMBD4148"
-			(at 173.99 60.9599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD4148T1-D.PDF"
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 200mA Switching Diode, SOD-123"
-			(at 171.45 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 171.45 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 171.45 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rated_Voltage" ""
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature_Coefficient" ""
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MMBD4148 RFG"
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 171.45 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e70dba15-4f65-463c-a5a3-5a88b83cf5b6")
-		)
-		(pin "2"
-			(uuid "ee072a1a-5e31-4410-94fe-faaa76e8768e")
-		)
-		(instances
-			(project "mpair"
-				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -16976,324 +17153,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 153.67 83.82 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dde9f20a-035a-437d-9b0f-992b4901ae9a")
-		(property "Reference" "D9"
-			(at 156.21 82.5499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMBD4148"
-			(at 156.21 85.0899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD4148T1-D.PDF"
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 200mA Switching Diode, SOD-123"
-			(at 153.67 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 153.67 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 153.67 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rated_Voltage" ""
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature_Coefficient" ""
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MMBD4148 RFG"
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 153.67 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "13e3e712-f692-4143-8061-ee28e6183422")
-		)
-		(pin "2"
-			(uuid "5ac01353-133f-4792-9bd6-2a94054cd52a")
-		)
-		(instances
-			(project "mpair"
-				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 201.93 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfce2aae-de30-4f9f-91a6-042a6bc11e00")
-		(property "Reference" "D14"
-			(at 201.93 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBD4148"
-			(at 201.93 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 201.93 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMSD4148T1-D.PDF"
-			(at 201.93 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 200mA Switching Diode, SOD-123"
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rated_Voltage" ""
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature_Coefficient" ""
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MMBD4148 RFG"
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" ""
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 201.93 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1470cd61-9cc0-49a5-923b-5bec02eba397")
-		)
-		(pin "2"
-			(uuid "0d53544c-bbe2-47e8-9829-9c783c87b30f")
-		)
-		(instances
-			(project "mpair"
-				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
-					(reference "D14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 198.12 72.39 90)
 		(unit 1)
@@ -17781,6 +17640,131 @@
 			(project "mpair"
 				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
 					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MarPi82:MMBD4148")
+		(at 201.93 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eeadca0c-12ca-4260-a29b-bf756b5ed48d")
+		(property "Reference" "D14"
+			(at 201.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBD4148"
+			(at 201.93 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
+			(at 201.93 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 201.93 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 201.93 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 201.93 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1801-MMBD4148RFGCT-ND"
+			(at 201.93 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "MMBD4148"
+			(at 201.93 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Taiwan Semiconductor Corporation"
+			(at 201.93 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "TO-236-3, SC-59, SOT-23-3"
+			(at 201.93 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c408100a-56de-4744-927c-7739fdd8dc02")
+		)
+		(pin "2"
+			(uuid "a40ce629-04a3-49c6-9c47-49eb23244155")
+		)
+		(pin "3"
+			(uuid "a38c7d9f-15e2-48df-a6e3-11f69bcd8fc5")
+		)
+		(instances
+			(project "mpair"
+				(path "/c7dbdcbe-6da7-4d67-a2bd-18f9bca31cdc/f2ca20df-c3d9-4fab-b042-fb1e678ce2fb"
+					(reference "D14")
 					(unit 1)
 				)
 			)

@@ -58,7 +58,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|113300000|98250000|f9118a6e-1fef-45e4-b2ec-6f5c3f05fe23|502ce346-39dd-43ab-8072-9a99f08a2a9e",
+          "Footprint design"
+        ],
+        [
+          "copper_edge_clearance|113300000|98250000|f9118a6e-1fef-45e4-b2ec-6f5c3f05fe23|64faa0a9-a05c-494a-aed2-6f47c4cb055c",
+          "Footprint design"
+        ],
+        [
+          "copper_edge_clearance|113300000|98515000|f9118a6e-1fef-45e4-b2ec-6f5c3f05fe23|6c4213bb-16ae-468f-bd83-b7f1e2648396",
+          "Footprint design"
+        ],
+        [
+          "copper_edge_clearance|113300000|98515000|f9118a6e-1fef-45e4-b2ec-6f5c3f05fe23|ecb968ff-a5cf-4198-ac76-e0a14f84b206",
+          "Footprint design"
+        ],
+        [
+          "copper_edge_clearance|113675000|96805000|f9118a6e-1fef-45e4-b2ec-6f5c3f05fe23|e39a1d5f-2873-433e-91d1-d2d27b03e066",
+          "Footprint design"
+        ]
+      ],
       "meta": {
         "version": 2
       },

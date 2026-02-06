@@ -5,7 +5,7 @@
 	(uuid "2b62f6e9-776d-48dc-b012-c2fd8177b2d1")
 	(paper "A4")
 	(title_block
-		(title "Czujnik parametrów środowiskowych")
+		(title "Enviromental parameters multi-sensor")
 		(date "2026-01-20")
 		(rev "1.0")
 		(company "MarPi82")

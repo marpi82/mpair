@@ -15,3 +15,6 @@ hardware/KiCAD/*auto*save*
 # remove Altium and EasyEDA projects from projects folder
 hardware/Altium/*
 hardware/EasyEDA/*
+
+# Ignore FreeCAD temporary files
+hardware/FreeCAD/*.FCBak
